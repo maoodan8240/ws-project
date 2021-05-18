@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="loginServer" />
+        <module name="gameServer" />
+        <module name="chatServer" />
+        <module name="mongodbRedisServer" />
+        <module name="thirdPartyServer" />
+        <module name="ws-gm-server" />
+        <module name="particularFunctionServer" />
+        <module name="clusterCenterServer" />
+        <module name="gatewayServer" />
+        <module name="sdk" />
+        <module name="relationship" />
+        <module name="logServer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="aggregator" target="1.8" />
+      <module name="analogClient" target="1.8" />
+      <module name="chatServer" target="1.8" />
+      <module name="clusterCenterServer" target="1.8" />
+      <module name="gameServer" target="1.8" />
+      <module name="gatewayServer" target="1.8" />
+      <module name="loginServer" target="1.8" />
+      <module name="logServer" target="1.8" />
+      <module name="mongodbRedisServer" target="1.8" />
+      <module name="particularFunctionServer" target="1.8" />
+      <module name="relationship" target="1.8" />
+      <module name="sdk" target="1.8" />
+      <module name="thirdPartyServer" target="1.8" />
+      <module name="ws-gm-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

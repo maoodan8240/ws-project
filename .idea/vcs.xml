@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/aggregator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/analogClient" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/chatServer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/clusterCenterServer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/gameServer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/gatewayServer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/logServer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/loginServer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mongodbRedisServer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/particularFunctionServer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/relationship" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sdk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/thirdPartyServer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ws" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ws-gm-client" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ws-gm-server" vcs="Git" />
+  </component>
+</project>

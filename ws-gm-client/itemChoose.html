@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title> - 数据表格</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+
+    <!-- Data Tables -->
+    <link href="css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>选择资源道具
+                    </h5>
+                </div>
+                <div class="col-sm-12 ibox-content" style="text-align: right">
+                    <button class="btn btn-sm btn-info" onclick="clearTable()">清空已选择项</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="btn btn-sm btn-info" onclick="sortTableCountFiled()">按照物品数量排序(从大到小)</button>
+                </div>
+                <div class="col-sm-12 ibox-content" style="text-align: left">
+                    <label class="control-label"><h2 style="color: #8a1f11" id="selectedItems" name="selectedItems">
+                        </h2></label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>所有资源/道具
+                        <small>&nbsp;&nbsp;(选择你想要的～)</small>
+                    </h5>
+                </div>
+                <div class="ibox-content">
+                    <table class="table table-striped table-bordered table-hover " id="sdfsdfs">
+                        <thead>
+                        <tr>
+                            <th style="width: 15%">Index</th>
+                            <th style="width: 15%">物品ID</th>
+                            <th style="width: 30%">物品名称</th>
+                            <th style="width: 15%">物品数量</th>
+                            <th style="width: auto">物品数量</th>
+                        </tr>
+                        </thead>
+                        <tbody id="itemIdNameTB" name="itemIdNameTB">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<!-- 全局js -->
+<script src="js/jquery.min.js?v=2.1.4"></script>
+<script src="js/bootstrap.min.js?v=3.3.6"></script>
+
+
+<script src="js/plugins/jeditable/jquery.jeditable.js"></script>
+
+<!-- Data Tables -->
+<script src="js/plugins/dataTables/jquery.dataTables.js"></script>
+<script src="js/plugins/dataTables/dataTables.bootstrap.js"></script>
+
+<!-- 自定义js -->
+<script src="js/content.js?v=1.0.0"></script>
+<script type="text/javascript" src="wsjs/core.js"></script>
+<script type="text/javascript" src="wsjs/itemChoose.js"></script>
+<script type="text/javascript" src="wsjs/itemBagKey.js"></script>
+
+
+</body>
+
+</html>

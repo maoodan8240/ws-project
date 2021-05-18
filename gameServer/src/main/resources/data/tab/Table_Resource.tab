@@ -1,0 +1,13 @@
+Id	资源名称	图片名称	资源品质	资源描述
+Id	ResourceName	iconName	ResourceQuality	ResourceExplainId
+int	string	string	string	string
+1	ResourceName_1	Common_Icon_002	49999:2,99999:5,499999:9,0:14	ResourceExplainId_1
+2	ResourceName_2	Common_Icon_001	149:5,499:9,0:14	ResourceExplainId_2
+3	ResourceName_3	Common_Icon_003	999:9,0:14	ResourceExplainId_3
+4	ResourceName_4	Common_Icon_004	0	ResourceExplainId_4
+5	ResourceName_5		0	ResourceExplainId_5
+6	ResourceName_6	Common_Icon_008	999:9,0:14	ResourceExplainId_6
+7	ResourceName_7	Common_Icon_006	499:5,999:9,0:14	ResourceExplainId_7
+9	ResourceName_9	Common_Icon_005	0	ResourceExplainId_9
+10	ResourceName_10	Common_Icon_007	499:5,999:9,0:14	ResourceExplainId_10
+18	ResourceName_18	Common_Icon_009	0	ResourceExplainId_18

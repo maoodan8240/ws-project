@@ -1,0 +1,25 @@
+.myLable {
+    width: auto;
+    text-align: right;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.myLable-first {
+    width: auto;
+    text-align: left;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.mySelect {
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}

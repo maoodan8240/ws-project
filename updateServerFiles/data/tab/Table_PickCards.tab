@@ -1,0 +1,6 @@
+抽卡ID	抽卡库类型	可使用道具ID	单次购买的道具或者资源ID	消耗货币ID	每日免费次数	首抽英雄	1次消耗货币数量	1次每日次数限制	1次折扣(每日一次折扣)	10次消耗货币数量	10次每日次数限制	10次折扣(每日一次折扣)	是否支持100连抽	100次消耗货币数量	100次每日次数限制	100次折扣(每日一次折扣)	抽卡库ID1	抽卡库ID2	抽卡库ID3	抽卡库ID4	抽卡库ID5	抽卡库ID6	抽卡库ID7	抽卡库ID8	抽卡库ID9	抽卡库ID10
+Id	DrawType	ItemId	ToBuyLibraryId	CoinId	FreeTimes	FirstPick	OneCoinNum	OneTimesLimit	OneTimesDiscount	TenCoinNum	TenTimesLimit	TenTimesDiscount	SupportHundered	HundredCoinNum	HundredTimesLimit	HundredTimesDiscount	DrawLib1	DrawLib2	DrawLib3	DrawLib4	DrawLib5	DrawLib6	DrawLib7	DrawLib8	DrawLib9	DrawLib10
+int	int	int	int	int	int	int	int	int	int	int	int	int	int	int	int	int	int	int	int	int	int	int	int	int	int	int
+1	1	0	20433	1	5	0	20000	20	5000	180000	20	10000	1	1800000	20	10000	1	3	1	3	1	1	1	3	3	3
+2	2	4100008	20384	2	1	1000005	240	999999	5000	2280	999999	10000	0	22800	999999	0	10	10	10	10	14	12	13	14	14	11
+3	3	4100007	20385	2	1	0	80	999999	5000	680	999999	10000	0	6800	999999	0	20265	20265	20265	20265	20434	20265	20265	20265	20265	24

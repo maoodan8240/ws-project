@@ -1,0 +1,19 @@
+WS-AnalogClient {
+
+  sdk-ip = "192.168.0.109:20010"
+
+  gate-server {
+    host = "192.168.0.109"
+    port = 18080
+  }
+
+  new-acc-name = "zww103" // 指定固定的名字注册
+
+  use-old-acc = false
+  old-acc-name = "zww103" // 老的账号密码 edc123
+  paswd = "11"
+
+  game-server-role = "WS-GameServer-192.168.0.109-23000" // gameserver 在集群中的actor地址
+  # WS-GameServer-10.19.18.225-23000 外网
+  # WS-GameServer-192.168.0.109-23000
+}

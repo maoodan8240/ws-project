@@ -1,0 +1,9 @@
+活动组别	活动类型	是否走通用逻辑	活动页面展示	子活动Id	活动标签标题	活动内容标题	活动内容的描述	活动标签图标	活动页签图标	模块枚举	额外参数
+Id	Type	GoCommonLogic	ShowInCollection	SubId	TagTitle	ContentTitle	ContentDesc	TagIcon	LabelIcon	ComponetEnum	OtherArgs
+int	int	int	int	string	string	string	string	string	string	string	string
+1	1	1	0	101		ContentTitle_1	ContentDesc_1				
+2	2	1	0	201,202,203,204,205,206,207		ContentTitle_2	ContentDesc_2				
+3	1	1	1	301,302,303,304,305,306,307,308,309,310,311,312,313,314	TagTitle_3	ContentTitle_3	ContentDesc_3	Activity_jj_6	Activity_jj_2	UIActivityLevelComponent	
+4	1	1	1	401,402,403,404,405,406,407,408,409,410	TagTitle_4	ContentTitle_4	ContentDesc_4	Activity_jj_7	Activity_jj_3	UIActivityTemplate1	
+5	1	1	1	501,502,503,504,505,506,507,508,509,510	TagTitle_5	ContentTitle_5	ContentDesc_5	Activity_jj_8	Activity_jj_3	UIActivityTemplate1	
+6	3	0	1		TagTitle_6	ContentTitle_6	ContentDesc_6	Activity_jj_9	Activity_jj_4	UIActivityTemplate2	

@@ -1,0 +1,9 @@
+商店ID	商店名称	启用方式	开启等级	强制刷新序列号	是否可以手动刷新
+Id	ShopName	EnableType	OpenLevel	ForceRefreshNo	CanManualRefresh
+int	string	int	int	int	int
+1	ShopName_1	2	1	1	0
+2	ShopName_2	1	1	1	1
+3	ShopName_3	1	1	1	1
+4	ShopName_4	1	1	1	1
+5	ShopName_5	1	1	1	1
+6	ShopName_6	1	1	1	0

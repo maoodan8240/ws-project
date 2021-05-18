@@ -1,0 +1,68 @@
+BUFFID	BUFF名称	BUFF描述	BUFF特效	英文对照	特殊引用	影响属性编号	buff飘字图片
+Id	BUFFNameId	BUFFExplainId	BUFFSpecial	English	SpecialIndex	BUFFProperty	BUFFWordPic
+int	string	string	string	string	int	int	string
+1	BUFFNameId_1				0	0	Buff_31
+2	BUFFNameId_2				0	0	Buff_32
+3	BUFFNameId_3				0	0	Buff_33
+4	BUFFNameId_4				0	0	Buff_34
+5	BUFFNameId_5				0	0	Buff_35
+6	BUFFNameId_6				0	0	Buff_36
+7	BUFFNameId_7				0	0	
+8	BUFFNameId_8				0	0	
+9	BUFFNameId_9				0	0	
+10	BUFFNameId_10				0	0	
+11	BUFFNameId_11				0	0	Buff_2
+12	BUFFNameId_12				0	0	Buff_16
+13	BUFFNameId_13				0	0	Buff_3
+14	BUFFNameId_14				0	0	Buff_18
+15	BUFFNameId_15				0	1	Buff_2
+16	BUFFNameId_16				0	2	Buff_3
+17	BUFFNameId_17				0	11	Buff_8
+18	BUFFNameId_18				0	12	Buff_9
+19	BUFFNameId_19				0	0	Buff_37
+20	BUFFNameId_20				0	0	
+21	BUFFNameId_21				0	0	
+22	BUFFNameId_22				0	0	
+23	BUFFNameId_23				0	0	Buff_41
+24	BUFFNameId_24				0	0	Buff_40
+25	BUFFNameId_25				0	0	Buff_42
+100	BUFFNameId_100				0	1	Buff_16
+101	BUFFNameId_101				0	2	Buff_18
+102	BUFFNameId_102				0	3	
+103	BUFFNameId_103				0	5	Buff_19
+104	BUFFNameId_104				0	6	Buff_30
+105	BUFFNameId_105				0	7	Buff_20
+106	BUFFNameId_106				0	8	Buff_21
+107	BUFFNameId_107				0	9	Buff_29
+108	BUFFNameId_108				0	10	Buff_22
+109	BUFFNameId_109				0	11	Buff_23
+110	BUFFNameId_110				0	12	Buff_24
+111	BUFFNameId_111				0	13	Buff_17
+112	BUFFNameId_112				0	14	Buff_25
+113	BUFFNameId_113				0	15	Buff_26
+114	BUFFNameId_114				0	16	Buff_27
+115	BUFFNameId_115				0	17	Buff_28
+116	BUFFNameId_116				0	23	Buff_16
+117	BUFFNameId_117				0	24	Buff_18
+118	BUFFNameId_118				0	25	
+119	BUFFNameId_119				0	26	Buff_46
+200	BUFFNameId_200				0	1	
+201	BUFFNameId_201				0	2	
+202	BUFFNameId_202				0	3	
+203	BUFFNameId_203				0	5	Buff_4
+204	BUFFNameId_204				0	6	Buff_15
+205	BUFFNameId_205				0	7	Buff_5
+206	BUFFNameId_206				0	8	Buff_6
+207	BUFFNameId_207				0	9	Buff_14
+208	BUFFNameId_208				0	10	Buff_7
+209	BUFFNameId_209				0	11	Buff_8
+210	BUFFNameId_210				0	12	Buff_9
+211	BUFFNameId_211				0	13	Buff_1
+212	BUFFNameId_212				0	14	Buff_10
+213	BUFFNameId_213				0	15	Buff_11
+214	BUFFNameId_214				0	16	Buff_12
+215	BUFFNameId_215				0	17	Buff_13
+216	BUFFNameId_216				0	23	
+217	BUFFNameId_217				0	24	
+218	BUFFNameId_218				0	25	
+219	BUFFNameId_219				0	26	Buff_37

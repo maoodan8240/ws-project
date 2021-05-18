@@ -1,0 +1,237 @@
+任务ID	是否启用	完成后继续显示	任务名称	任务内容描述	任务ICON	任务Icon品质框	跳转功能界面	跳转界面标签页	任务类型	任务小类型	任务开启等级	前置任务	后置任务	任务ID	任务完成类型	任务完成数量需求	任务奖励1	任务奖励1数量	任务奖励2	任务奖励2数量	任务奖励3	任务奖励3数量	任务奖励4	任务奖励4数量
+Id	Enable	Display	TaskNameId	TaskDesId	TaskIcon	TaskQuality	SkipFuncUI	SkipUITab	TaskType	TaskSmallType	LevelNeed	BeforeTask	AfterTask	IdTmp	CompleteType	CompleteCondition	TaskReward1Id	TaskReward1Number	TaskReward2Id	TaskReward2Number	TaskReward3Id	TaskReward3Number	TaskReward4Id	TaskReward4Number
+int	int	int	string	string	string	int	string	string	int	int	int	int	int	int	string	string	int	int	int	int	int	int	int	int
+100	1	0	TaskNameId_100	TaskDesId_100	Icon_Xhp_002	5	UIStagePanel	NormalTab	1	1	10	0	0	100	NewPve_DaliyAttackNormalTimes	10	4	150	1	8000	0	0	0	0
+101	1	0	TaskNameId_101	TaskDesId_101	Icon_Xhp_002	5	UIStagePanel	EliteTab	1	1	10	0	0	101	NewPve_DaliyAttackEliteNum	3	4	150	1	8000	0	0	0	0
+102	1	0	TaskNameId_102	TaskDesId_102	Icon_Xhp_002	5			1	1	15	0	0	102	PickCards_DaliyTimes	3	4	60	1	12000	0	0	0	0
+103	0	0	TaskNameId_103	TaskDesId_103	Icon_Xhp_002	9			1	1	20	0	0	103		1	4	80	1	2000	0	0	0	0
+104	1	0	TaskNameId_104	TaskDesId_104	Icon_Xhp_002	14			1	1	1	0	0	104	Arean_DaliyAttackTimes	3	4	120	1	10000	0	0	0	0
+105	1	0	TaskNameId_105	TaskDesId_105	Icon_Xhp_002	20			1	1	1	0	0	105	UltimateTest_CompletFloorLevel	2	4	120	1	10000	0	0	0	0
+106	0	0	TaskNameId_106	TaskDesId_106	Icon_Xhp_002	5			1	1	1	0	0	106		1	4	60	1	6000	0	0	0	0
+107	1	0	TaskNameId_107	TaskDesId_107	Icon_Xhp_002	9			1	1	1	0	0	107	Heros_Daliy_UpLv_Times	3	4	30	1	6000	0	0	0	0
+108	1	0	TaskNameId_108	TaskDesId_108	Icon_Xhp_002	14			1	1	1	0	0	108	Heros_Daliy_UpQualiy_Times	1	4	30	1	6000	0	0	0	0
+109	1	0	TaskNameId_109	TaskDesId_109	Icon_Xhp_002	20			1	1	1	0	0	109	Heros_Daliy_UpSkill_Times	3	4	30	1	6000	0	0	0	0
+110	1	0	TaskNameId_110	TaskDesId_110	Icon_Xhp_002	5			1	1	1	0	0	110	ResourcePoint_DaliyConsumes	2:300	4	100	1	50000	0	0	0	0
+111	1	0	TaskNameId_111	TaskDesId_111	Icon_Xhp_002	9			1	1	1	0	0	111	Energy_DaliyBuy	1	4	60	1	6000	0	0	0	0
+112	1	1	TaskNameId_112	TaskDesId_112	Icon_Xhp_001	14			1	1	1	0	0	112	MonthCard	250	2	100	0	0	0	0	0	0
+113	1	1	TaskNameId_113	TaskDesId_113	Icon_Xhp_001	20			1	1	1	0	0	113	MonthCard	880	2	100	0	0	0	0	0	0
+114	1	0	TaskNameId_114	TaskDesId_114	Icon_Xhp_003	20			1	2	1	0	0	114	Energy_TimeGet	0	3	60	0	0	0	0	0	0
+115	1	0	TaskNameId_115	TaskDesId_115	Icon_Xhp_003	20			1	2	1	0	0	115	Energy_TimeGet	0	3	60	0	0	0	0	0	0
+116	1	0	TaskNameId_116	TaskDesId_116	Icon_Xhp_003	20			1	2	1	0	0	116	Energy_TimeGet	0	3	60	0	0	0	0	0	0
+117	1	0	TaskNameId_117	TaskDesId_117	Icon_Xhp_003	20			1	2	1	0	0	117	Energy_TimeGet	0	3	60	0	0	0	0	0	0
+200	1	0	TaskNameId_200	TaskDesId_200	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	0	201	200	NewPve_HasComplet_Stage	10103:1	1	3000	4080001	5	0	0	0	0
+201	1	0	TaskNameId_200	TaskDesId_201	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	200	202	201	NewPve_HasComplet_Stage	10204:1	1	3000	4080001	5	0	0	0	0
+202	1	0	TaskNameId_200	TaskDesId_202	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	201	203	202	NewPve_HasComplet_Stage	10208:1	1	4000	4080002	5	0	0	0	0
+203	1	0	TaskNameId_200	TaskDesId_203	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	202	204	203	NewPve_HasComplet_Stage	10304:1	1	3000	4080001	5	0	0	0	0
+204	1	0	TaskNameId_200	TaskDesId_204	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	203	205	204	NewPve_HasComplet_Stage	10308:1	1	4000	4080002	5	0	0	0	0
+205	1	0	TaskNameId_200	TaskDesId_205	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	204	206	205	NewPve_HasComplet_Stage	10404:1	1	3000	4080001	5	0	0	0	0
+206	1	0	TaskNameId_200	TaskDesId_206	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	205	207	206	NewPve_HasComplet_Stage	10408:1	1	4000	4080002	5	0	0	0	0
+207	1	0	TaskNameId_200	TaskDesId_207	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	206	208	207	NewPve_HasComplet_Stage	10504:1	1	3000	4080001	5	4	100	0	0
+208	1	0	TaskNameId_200	TaskDesId_208	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	207	209	208	NewPve_HasComplet_Stage	10507:1	1	4000	4080002	5	0	0	0	0
+209	1	0	TaskNameId_200	TaskDesId_209	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	208	210	209	NewPve_HasComplet_Stage	10510:1	1	5000	4080003	5	0	0	0	0
+210	1	0	TaskNameId_200	TaskDesId_210	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	209	211	210	NewPve_HasComplet_Stage	10604:1	1	3000	4080001	5	0	0	0	0
+211	1	0	TaskNameId_200	TaskDesId_211	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	210	212	211	NewPve_HasComplet_Stage	10607:1	1	4000	4080002	5	0	0	0	0
+212	1	0	TaskNameId_200	TaskDesId_212	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	211	213	212	NewPve_HasComplet_Stage	10610:1	1	5000	4080003	5	0	0	0	0
+213	1	0	TaskNameId_200	TaskDesId_213	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	212	214	213	NewPve_HasComplet_Stage	10704:1	0	0	4080001	5	4	100	0	0
+214	1	0	TaskNameId_200	TaskDesId_214	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	213	215	214	NewPve_HasComplet_Stage	10707:1	1	4000	4080002	5	0	0	0	0
+215	1	0	TaskNameId_200	TaskDesId_215	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	214	216	215	NewPve_HasComplet_Stage	10710:1	1	5000	4080003	5	0	0	0	0
+216	1	0	TaskNameId_200	TaskDesId_216	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	215	217	216	NewPve_HasComplet_Stage	10804:1	1	3000	4080001	5	0	0	0	0
+217	1	0	TaskNameId_200	TaskDesId_217	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	216	218	217	NewPve_HasComplet_Stage	10807:1	1	4000	4080002	5	0	0	0	0
+218	1	0	TaskNameId_200	TaskDesId_218	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	217	219	218	NewPve_HasComplet_Stage	10810:1	1	5000	4080003	5	0	0	0	0
+219	1	0	TaskNameId_200	TaskDesId_219	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	218	220	219	NewPve_HasComplet_Stage	10904:1	0	0	4080001	5	4	100	0	0
+220	1	0	TaskNameId_200	TaskDesId_220	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	219	221	220	NewPve_HasComplet_Stage	10907:1	1	4000	4080002	5	0	0	0	0
+221	1	0	TaskNameId_200	TaskDesId_221	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	220	222	221	NewPve_HasComplet_Stage	10910:1	1	5000	4080003	5	0	0	0	0
+222	1	0	TaskNameId_200	TaskDesId_222	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	221	223	222	NewPve_HasComplet_Stage	11004:1	1	3000	4080001	5	0	0	0	0
+223	1	0	TaskNameId_200	TaskDesId_223	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	222	224	223	NewPve_HasComplet_Stage	11007:1	1	4000	4080002	5	0	0	0	0
+224	1	0	TaskNameId_200	TaskDesId_224	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	223	225	224	NewPve_HasComplet_Stage	11010:1	1	5000	4080003	5	0	0	0	0
+225	1	0	TaskNameId_200	TaskDesId_225	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	224	226	225	NewPve_HasComplet_Stage	11104:1	0	0	4080001	5	4	100	0	0
+226	1	0	TaskNameId_200	TaskDesId_226	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	225	227	226	NewPve_HasComplet_Stage	11107:1	1	4000	4080002	5	0	0	0	0
+227	1	0	TaskNameId_200	TaskDesId_227	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	226	228	227	NewPve_HasComplet_Stage	11110:1	1	5000	4080003	5	0	0	0	0
+228	1	0	TaskNameId_200	TaskDesId_228	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	227	229	228	NewPve_HasComplet_Stage	11204:1	1	3000	4080001	5	0	0	0	0
+229	1	0	TaskNameId_200	TaskDesId_229	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	228	230	229	NewPve_HasComplet_Stage	11207:1	1	4000	4080002	5	0	0	0	0
+230	1	0	TaskNameId_200	TaskDesId_230	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	229	231	230	NewPve_HasComplet_Stage	11210:1	1	5000	4080003	5	0	0	0	0
+231	1	0	TaskNameId_200	TaskDesId_231	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	230	232	231	NewPve_HasComplet_Stage	11304:1	0	0	4080001	5	4	100	0	0
+232	1	0	TaskNameId_200	TaskDesId_232	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	231	233	232	NewPve_HasComplet_Stage	11307:1	1	4000	4080002	5	0	0	0	0
+233	1	0	TaskNameId_200	TaskDesId_233	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	232	234	233	NewPve_HasComplet_Stage	11310:1	1	5000	4080003	5	0	0	0	0
+234	1	0	TaskNameId_200	TaskDesId_234	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	233	235	234	NewPve_HasComplet_Stage	11404:1	1	3000	4080001	5	0	0	0	0
+235	1	0	TaskNameId_200	TaskDesId_235	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	234	236	235	NewPve_HasComplet_Stage	11407:1	1	4000	4080002	5	0	0	0	0
+236	1	0	TaskNameId_200	TaskDesId_236	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	235	237	236	NewPve_HasComplet_Stage	11410:1	1	5000	4080003	5	0	0	0	0
+237	1	0	TaskNameId_200	TaskDesId_237	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	236	238	237	NewPve_HasComplet_Stage	11504:1	0	0	4080001	5	4	100	0	0
+238	1	0	TaskNameId_200	TaskDesId_238	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	237	239	238	NewPve_HasComplet_Stage	11507:1	1	4000	4080002	5	0	0	0	0
+239	1	0	TaskNameId_200	TaskDesId_239	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	238	240	239	NewPve_HasComplet_Stage	11510:1	1	5000	4080003	5	0	0	0	0
+240	1	0	TaskNameId_200	TaskDesId_240	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	239	241	240	NewPve_HasComplet_Stage	11604:1	1	3000	4080001	5	0	0	0	0
+241	1	0	TaskNameId_200	TaskDesId_241	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	240	242	241	NewPve_HasComplet_Stage	11607:1	1	4000	4080002	5	0	0	0	0
+242	1	0	TaskNameId_200	TaskDesId_242	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	241	243	242	NewPve_HasComplet_Stage	11610:1	1	5000	4080003	5	0	0	0	0
+243	1	0	TaskNameId_200	TaskDesId_243	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	242	244	243	NewPve_HasComplet_Stage	11704:1	0	0	4080001	5	4	100	0	0
+244	1	0	TaskNameId_200	TaskDesId_244	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	243	245	244	NewPve_HasComplet_Stage	11707:1	1	4000	4080002	5	0	0	0	0
+245	1	0	TaskNameId_200	TaskDesId_245	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	244	246	245	NewPve_HasComplet_Stage	11710:1	1	5000	4080003	5	0	0	0	0
+246	1	0	TaskNameId_200	TaskDesId_246	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	245	247	246	NewPve_HasComplet_Stage	11804:1	1	3000	4080001	5	0	0	0	0
+247	1	0	TaskNameId_200	TaskDesId_247	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	246	248	247	NewPve_HasComplet_Stage	11807:1	1	4000	4080002	5	0	0	0	0
+248	1	0	TaskNameId_200	TaskDesId_248	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	247	249	248	NewPve_HasComplet_Stage	11810:1	1	5000	4080003	5	0	0	0	0
+249	1	0	TaskNameId_200	TaskDesId_249	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	248	250	249	NewPve_HasComplet_Stage	11904:1	0	0	4080001	5	4	100	0	0
+250	1	0	TaskNameId_200	TaskDesId_250	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	249	251	250	NewPve_HasComplet_Stage	11907:1	1	4000	4080002	5	0	0	0	0
+251	1	0	TaskNameId_200	TaskDesId_251	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	250	252	251	NewPve_HasComplet_Stage	11910:1	1	5000	4080003	5	0	0	0	0
+252	1	0	TaskNameId_200	TaskDesId_252	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	251	253	252	NewPve_HasComplet_Stage	12004:1	1	3000	4080001	5	0	0	0	0
+253	1	0	TaskNameId_200	TaskDesId_253	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	252	254	253	NewPve_HasComplet_Stage	12007:1	1	4000	4080002	5	0	0	0	0
+254	1	0	TaskNameId_200	TaskDesId_254	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	253	255	254	NewPve_HasComplet_Stage	12010:1	1	5000	4080003	5	0	0	0	0
+255	1	0	TaskNameId_200	TaskDesId_255	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	254	256	255	NewPve_HasComplet_Stage	12104:1	0	0	4080001	5	4	100	0	0
+256	1	0	TaskNameId_200	TaskDesId_256	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	255	257	256	NewPve_HasComplet_Stage	12107:1	1	4000	4080002	5	0	0	0	0
+257	1	0	TaskNameId_200	TaskDesId_257	Icon_Xhp_002	14	UIStagePanel	NormalTab	2	1	1	256	0	257	NewPve_HasComplet_Stage	12110:1	1	5000	4080003	5	0	0	0	0
+300	1	0	TaskNameId_300	TaskDesId_300	Icon_Xhp_002	14			2	1	1	0	301	300	Heros_HasCollectHeroNum	3	1	1000	4080001	5	0	0	0	0
+301	1	0	TaskNameId_300	TaskDesId_301	Icon_Xhp_002	14			2	1	1	300	302	301	Heros_HasCollectHeroNum	4	1	1000	4080001	5	0	0	0	0
+302	1	0	TaskNameId_300	TaskDesId_302	Icon_Xhp_002	14			2	1	1	301	303	302	Heros_HasCollectHeroNum	5	1	1000	4080001	5	0	0	0	0
+303	1	0	TaskNameId_300	TaskDesId_303	Icon_Xhp_002	14			2	1	1	302	304	303	Heros_HasCollectHeroNum	6	1	3000	4080001	5	0	0	0	0
+304	1	0	TaskNameId_300	TaskDesId_304	Icon_Xhp_002	14			2	1	1	303	305	304	Heros_HasCollectHeroNum	7	1	3000	4080001	5	0	0	0	0
+305	1	0	TaskNameId_300	TaskDesId_305	Icon_Xhp_002	14			2	1	1	304	306	305	Heros_HasCollectHeroNum	8	1	3000	4080001	5	0	0	0	0
+306	1	0	TaskNameId_300	TaskDesId_306	Icon_Xhp_002	14			2	1	1	305	307	306	Heros_HasCollectHeroNum	9	1	5000	4080002	5	0	0	0	0
+307	1	0	TaskNameId_300	TaskDesId_307	Icon_Xhp_002	14			2	1	1	306	308	307	Heros_HasCollectHeroNum	10	1	5000	4080002	5	0	0	0	0
+308	1	0	TaskNameId_300	TaskDesId_308	Icon_Xhp_002	14			2	1	1	307	309	308	Heros_HasCollectHeroNum	11	1	5000	4080002	5	0	0	0	0
+309	1	0	TaskNameId_300	TaskDesId_309	Icon_Xhp_002	14			2	1	1	308	310	309	Heros_HasCollectHeroNum	12	1	5000	4080002	5	0	0	0	0
+310	1	0	TaskNameId_300	TaskDesId_310	Icon_Xhp_002	14			2	1	1	309	311	310	Heros_HasCollectHeroNum	13	1	7500	4080002	10	0	0	0	0
+311	1	0	TaskNameId_300	TaskDesId_311	Icon_Xhp_002	14			2	1	1	310	312	311	Heros_HasCollectHeroNum	14	1	7500	4080002	10	0	0	0	0
+312	1	0	TaskNameId_300	TaskDesId_312	Icon_Xhp_002	14			2	1	1	311	313	312	Heros_HasCollectHeroNum	15	1	7500	4080002	10	0	0	0	0
+313	1	0	TaskNameId_300	TaskDesId_313	Icon_Xhp_002	14			2	1	1	312	314	313	Heros_HasCollectHeroNum	16	1	10000	4080002	10	0	0	0	0
+314	1	0	TaskNameId_300	TaskDesId_314	Icon_Xhp_002	14			2	1	1	313	315	314	Heros_HasCollectHeroNum	17	1	10000	4080002	10	0	0	0	0
+315	1	0	TaskNameId_300	TaskDesId_315	Icon_Xhp_002	14			2	1	1	314	316	315	Heros_HasCollectHeroNum	18	1	10000	4080002	10	0	0	0	0
+316	1	0	TaskNameId_300	TaskDesId_316	Icon_Xhp_002	14			2	1	1	315	0	316	Heros_HasCollectHeroNum	19	1	10000	4080002	10	0	0	0	0
+400	1	0	TaskNameId_400	TaskDesId_400	Icon_Xhp_002	14			2	1	1	0	401	400	Player_LevelUp	2	1	4000	2	10	0	0	0	0
+401	1	0	TaskNameId_400	TaskDesId_401	Icon_Xhp_002	14			2	1	1	400	402	401	Player_LevelUp	4	1	4000	2	10	0	0	0	0
+402	1	0	TaskNameId_400	TaskDesId_402	Icon_Xhp_002	14			2	1	1	401	403	402	Player_LevelUp	6	1	4000	2	10	0	0	0	0
+403	1	0	TaskNameId_400	TaskDesId_403	Icon_Xhp_002	14			2	1	1	402	404	403	Player_LevelUp	8	1	4000	2	10	0	0	0	0
+404	1	0	TaskNameId_400	TaskDesId_404	Icon_Xhp_002	14			2	1	1	403	405	404	Player_LevelUp	10	1	4000	2	10	0	0	0	0
+405	1	0	TaskNameId_400	TaskDesId_405	Icon_Xhp_002	14			2	1	1	404	406	405	Player_LevelUp	12	1	4000	2	10	0	0	0	0
+406	1	0	TaskNameId_400	TaskDesId_406	Icon_Xhp_002	14			2	1	1	405	407	406	Player_LevelUp	14	1	4000	2	10	0	0	0	0
+407	1	0	TaskNameId_400	TaskDesId_407	Icon_Xhp_002	14			2	1	1	406	408	407	Player_LevelUp	16	1	4000	2	10	0	0	0	0
+408	1	0	TaskNameId_400	TaskDesId_408	Icon_Xhp_002	14			2	1	1	407	409	408	Player_LevelUp	18	1	4000	2	10	0	0	0	0
+409	1	0	TaskNameId_400	TaskDesId_409	Icon_Xhp_002	14			2	1	1	408	410	409	Player_LevelUp	20	1	4000	2	10	0	0	0	0
+410	1	0	TaskNameId_400	TaskDesId_410	Icon_Xhp_002	14			2	1	1	409	411	410	Player_LevelUp	22	1	4000	2	15	0	0	0	0
+411	1	0	TaskNameId_400	TaskDesId_411	Icon_Xhp_002	14			2	1	1	410	412	411	Player_LevelUp	24	1	4000	2	15	0	0	0	0
+412	1	0	TaskNameId_400	TaskDesId_412	Icon_Xhp_002	14			2	1	1	411	413	412	Player_LevelUp	26	1	4000	2	15	0	0	0	0
+413	1	0	TaskNameId_400	TaskDesId_413	Icon_Xhp_002	14			2	1	1	412	414	413	Player_LevelUp	28	1	4000	2	15	0	0	0	0
+414	1	0	TaskNameId_400	TaskDesId_414	Icon_Xhp_002	14			2	1	1	413	415	414	Player_LevelUp	30	1	4000	2	15	0	0	0	0
+415	1	0	TaskNameId_400	TaskDesId_415	Icon_Xhp_002	14			2	1	1	414	416	415	Player_LevelUp	32	1	4000	2	15	0	0	0	0
+416	1	0	TaskNameId_400	TaskDesId_416	Icon_Xhp_002	14			2	1	1	415	417	416	Player_LevelUp	34	1	4000	2	15	0	0	0	0
+417	1	0	TaskNameId_400	TaskDesId_417	Icon_Xhp_002	14			2	1	1	416	418	417	Player_LevelUp	36	1	4000	2	15	0	0	0	0
+418	1	0	TaskNameId_400	TaskDesId_418	Icon_Xhp_002	14			2	1	1	417	419	418	Player_LevelUp	38	1	4000	2	15	0	0	0	0
+419	1	0	TaskNameId_400	TaskDesId_419	Icon_Xhp_002	14			2	1	1	418	420	419	Player_LevelUp	40	1	4000	2	15	0	0	0	0
+420	1	0	TaskNameId_400	TaskDesId_420	Icon_Xhp_002	14			2	1	1	419	421	420	Player_LevelUp	41	1	4000	2	20	0	0	0	0
+421	1	0	TaskNameId_400	TaskDesId_421	Icon_Xhp_002	14			2	1	1	420	422	421	Player_LevelUp	42	1	4000	2	20	0	0	0	0
+422	1	0	TaskNameId_400	TaskDesId_422	Icon_Xhp_002	14			2	1	1	421	423	422	Player_LevelUp	43	1	4000	2	20	0	0	0	0
+423	1	0	TaskNameId_400	TaskDesId_423	Icon_Xhp_002	14			2	1	1	422	424	423	Player_LevelUp	44	1	4000	2	20	0	0	0	0
+424	1	0	TaskNameId_400	TaskDesId_424	Icon_Xhp_002	14			2	1	1	423	425	424	Player_LevelUp	45	1	4000	2	20	0	0	0	0
+425	1	0	TaskNameId_400	TaskDesId_425	Icon_Xhp_002	14			2	1	1	424	426	425	Player_LevelUp	46	1	4000	2	20	0	0	0	0
+426	1	0	TaskNameId_400	TaskDesId_426	Icon_Xhp_002	14			2	1	1	425	427	426	Player_LevelUp	47	1	4000	2	20	0	0	0	0
+427	1	0	TaskNameId_400	TaskDesId_427	Icon_Xhp_002	14			2	1	1	426	428	427	Player_LevelUp	48	1	4000	2	20	0	0	0	0
+428	1	0	TaskNameId_400	TaskDesId_428	Icon_Xhp_002	14			2	1	1	427	429	428	Player_LevelUp	49	1	4000	2	20	0	0	0	0
+429	1	0	TaskNameId_400	TaskDesId_429	Icon_Xhp_002	14			2	1	1	428	430	429	Player_LevelUp	50	1	4000	2	20	0	0	0	0
+430	1	0	TaskNameId_400	TaskDesId_430	Icon_Xhp_002	14			2	1	1	429	431	430	Player_LevelUp	51	1	5000	2	20	0	0	0	0
+431	1	0	TaskNameId_400	TaskDesId_431	Icon_Xhp_002	14			2	1	1	430	432	431	Player_LevelUp	52	1	5000	2	20	0	0	0	0
+432	1	0	TaskNameId_400	TaskDesId_432	Icon_Xhp_002	14			2	1	1	431	433	432	Player_LevelUp	53	1	5000	2	20	0	0	0	0
+433	1	0	TaskNameId_400	TaskDesId_433	Icon_Xhp_002	14			2	1	1	432	434	433	Player_LevelUp	54	1	5000	2	20	0	0	0	0
+434	1	0	TaskNameId_400	TaskDesId_434	Icon_Xhp_002	14			2	1	1	433	435	434	Player_LevelUp	55	1	5000	2	20	0	0	0	0
+435	1	0	TaskNameId_400	TaskDesId_435	Icon_Xhp_002	14			2	1	1	434	436	435	Player_LevelUp	56	1	5000	2	20	0	0	0	0
+436	1	0	TaskNameId_400	TaskDesId_436	Icon_Xhp_002	14			2	1	1	435	437	436	Player_LevelUp	57	1	5000	2	20	0	0	0	0
+437	1	0	TaskNameId_400	TaskDesId_437	Icon_Xhp_002	14			2	1	1	436	438	437	Player_LevelUp	58	1	5000	2	20	0	0	0	0
+438	1	0	TaskNameId_400	TaskDesId_438	Icon_Xhp_002	14			2	1	1	437	439	438	Player_LevelUp	59	1	5000	2	20	0	0	0	0
+439	1	0	TaskNameId_400	TaskDesId_439	Icon_Xhp_002	14			2	1	1	438	440	439	Player_LevelUp	60	1	5000	2	20	0	0	0	0
+440	1	0	TaskNameId_400	TaskDesId_440	Icon_Xhp_002	14			2	1	1	439	441	440	Player_LevelUp	61	1	5000	2	20	0	0	0	0
+441	1	0	TaskNameId_400	TaskDesId_441	Icon_Xhp_002	14			2	1	1	440	442	441	Player_LevelUp	62	1	5000	2	20	0	0	0	0
+442	1	0	TaskNameId_400	TaskDesId_442	Icon_Xhp_002	14			2	1	1	441	443	442	Player_LevelUp	63	1	5000	2	20	0	0	0	0
+443	1	0	TaskNameId_400	TaskDesId_443	Icon_Xhp_002	14			2	1	1	442	444	443	Player_LevelUp	64	1	5000	2	20	0	0	0	0
+444	1	0	TaskNameId_400	TaskDesId_444	Icon_Xhp_002	14			2	1	1	443	445	444	Player_LevelUp	65	1	5000	2	20	0	0	0	0
+445	1	0	TaskNameId_400	TaskDesId_445	Icon_Xhp_002	14			2	1	1	444	446	445	Player_LevelUp	66	1	5000	2	20	0	0	0	0
+446	1	0	TaskNameId_400	TaskDesId_446	Icon_Xhp_002	14			2	1	1	445	447	446	Player_LevelUp	67	1	5000	2	20	0	0	0	0
+447	1	0	TaskNameId_400	TaskDesId_447	Icon_Xhp_002	14			2	1	1	446	448	447	Player_LevelUp	68	1	5000	2	20	0	0	0	0
+448	1	0	TaskNameId_400	TaskDesId_448	Icon_Xhp_002	14			2	1	1	447	449	448	Player_LevelUp	69	1	5000	2	20	0	0	0	0
+449	1	0	TaskNameId_400	TaskDesId_449	Icon_Xhp_002	14			2	1	1	448	450	449	Player_LevelUp	70	1	5000	2	20	0	0	0	0
+450	1	0	TaskNameId_400	TaskDesId_450	Icon_Xhp_002	14			2	1	1	449	451	450	Player_LevelUp	71	1	5000	2	20	0	0	0	0
+451	1	0	TaskNameId_400	TaskDesId_451	Icon_Xhp_002	14			2	1	1	450	452	451	Player_LevelUp	72	1	5000	2	20	0	0	0	0
+452	1	0	TaskNameId_400	TaskDesId_452	Icon_Xhp_002	14			2	1	1	451	453	452	Player_LevelUp	73	1	5000	2	20	0	0	0	0
+453	1	0	TaskNameId_400	TaskDesId_453	Icon_Xhp_002	14			2	1	1	452	454	453	Player_LevelUp	74	1	5000	2	20	0	0	0	0
+454	1	0	TaskNameId_400	TaskDesId_454	Icon_Xhp_002	14			2	1	1	453	455	454	Player_LevelUp	75	1	5000	2	20	0	0	0	0
+455	1	0	TaskNameId_400	TaskDesId_455	Icon_Xhp_002	14			2	1	1	454	456	455	Player_LevelUp	76	1	5000	2	25	0	0	0	0
+456	1	0	TaskNameId_400	TaskDesId_456	Icon_Xhp_002	14			2	1	1	455	457	456	Player_LevelUp	77	1	5000	2	25	0	0	0	0
+457	1	0	TaskNameId_400	TaskDesId_457	Icon_Xhp_002	14			2	1	1	456	458	457	Player_LevelUp	78	1	5000	2	25	0	0	0	0
+458	1	0	TaskNameId_400	TaskDesId_458	Icon_Xhp_002	14			2	1	1	457	459	458	Player_LevelUp	79	1	5000	2	25	0	0	0	0
+459	1	0	TaskNameId_400	TaskDesId_459	Icon_Xhp_002	14			2	1	1	458	460	459	Player_LevelUp	80	1	5000	2	25	0	0	0	0
+460	1	0	TaskNameId_400	TaskDesId_460	Icon_Xhp_002	14			2	1	1	459	461	460	Player_LevelUp	81	1	5000	2	25	0	0	0	0
+461	1	0	TaskNameId_400	TaskDesId_461	Icon_Xhp_002	14			2	1	1	460	462	461	Player_LevelUp	82	1	5000	2	25	0	0	0	0
+462	1	0	TaskNameId_400	TaskDesId_462	Icon_Xhp_002	14			2	1	1	461	463	462	Player_LevelUp	83	1	5000	2	25	0	0	0	0
+463	1	0	TaskNameId_400	TaskDesId_463	Icon_Xhp_002	14			2	1	1	462	464	463	Player_LevelUp	84	1	5000	2	25	0	0	0	0
+464	1	0	TaskNameId_400	TaskDesId_464	Icon_Xhp_002	14			2	1	1	463	465	464	Player_LevelUp	85	1	5000	2	25	0	0	0	0
+465	1	0	TaskNameId_400	TaskDesId_465	Icon_Xhp_002	14			2	1	1	464	466	465	Player_LevelUp	86	1	5000	2	25	0	0	0	0
+466	1	0	TaskNameId_400	TaskDesId_466	Icon_Xhp_002	14			2	1	1	465	467	466	Player_LevelUp	87	1	5000	2	25	0	0	0	0
+467	1	0	TaskNameId_400	TaskDesId_467	Icon_Xhp_002	14			2	1	1	466	468	467	Player_LevelUp	88	1	5000	2	25	0	0	0	0
+468	1	0	TaskNameId_400	TaskDesId_468	Icon_Xhp_002	14			2	1	1	467	469	468	Player_LevelUp	89	1	5000	2	25	0	0	0	0
+469	1	0	TaskNameId_400	TaskDesId_469	Icon_Xhp_002	14			2	1	1	468	470	469	Player_LevelUp	90	1	5000	2	25	0	0	0	0
+470	1	0	TaskNameId_400	TaskDesId_470	Icon_Xhp_002	14			2	1	1	469	471	470	Player_LevelUp	91	1	5000	2	25	0	0	0	0
+471	1	0	TaskNameId_400	TaskDesId_471	Icon_Xhp_002	14			2	1	1	470	472	471	Player_LevelUp	92	1	5000	2	25	0	0	0	0
+472	1	0	TaskNameId_400	TaskDesId_472	Icon_Xhp_002	14			2	1	1	471	473	472	Player_LevelUp	93	1	5000	2	25	0	0	0	0
+473	1	0	TaskNameId_400	TaskDesId_473	Icon_Xhp_002	14			2	1	1	472	474	473	Player_LevelUp	94	1	5000	2	25	0	0	0	0
+474	1	0	TaskNameId_400	TaskDesId_474	Icon_Xhp_002	14			2	1	1	473	475	474	Player_LevelUp	95	1	5000	2	25	0	0	0	0
+475	1	0	TaskNameId_400	TaskDesId_475	Icon_Xhp_002	14			2	1	1	474	476	475	Player_LevelUp	96	1	5000	2	25	0	0	0	0
+476	1	0	TaskNameId_400	TaskDesId_476	Icon_Xhp_002	14			2	1	1	475	477	476	Player_LevelUp	97	1	5000	2	25	0	0	0	0
+477	1	0	TaskNameId_400	TaskDesId_477	Icon_Xhp_002	14			2	1	1	476	478	477	Player_LevelUp	98	1	5000	2	25	0	0	0	0
+478	1	0	TaskNameId_400	TaskDesId_478	Icon_Xhp_002	14			2	1	1	477	479	478	Player_LevelUp	99	1	5000	2	25	0	0	0	0
+479	1	0	TaskNameId_400	TaskDesId_479	Icon_Xhp_002	14			2	1	1	478	0	479	Player_LevelUp	100	1	5000	2	25	0	0	0	0
+500	1	0	TaskNameId_500	TaskDesId_500	Icon_Xhp_002	14			2	1	1	0	501	500	Heros_GREEN_QualityNum	1	1	1000	4020000	3	0	0	0	0
+501	1	0	TaskNameId_500	TaskDesId_501	Icon_Xhp_002	14			2	1	1	500	502	501	Heros_GREEN_QualityNum	3	1	1000	4020000	3	0	0	0	0
+502	1	0	TaskNameId_500	TaskDesId_502	Icon_Xhp_002	14			2	1	1	501	503	502	Heros_GREEN_QualityNum	6	1	1000	4020000	3	0	0	0	0
+503	1	0	TaskNameId_500	TaskDesId_503	Icon_Xhp_002	14			2	1	1	502	504	503	Heros_GREEN_1_QualityNum	1	1	1000	4020000	3	0	0	0	0
+504	1	0	TaskNameId_500	TaskDesId_504	Icon_Xhp_002	14			2	1	1	503	505	504	Heros_GREEN_1_QualityNum	3	1	1000	4020000	3	0	0	0	0
+505	1	0	TaskNameId_500	TaskDesId_505	Icon_Xhp_002	14			2	1	1	504	506	505	Heros_GREEN_1_QualityNum	6	1	1000	4020000	3	0	0	0	0
+506	1	0	TaskNameId_500	TaskDesId_506	Icon_Xhp_002	14			2	1	1	505	507	506	Heros_GREEN_2_QualityNum	1	1	2000	4020000	3	0	0	0	0
+507	1	0	TaskNameId_500	TaskDesId_507	Icon_Xhp_002	14			2	1	1	506	508	507	Heros_GREEN_2_QualityNum	3	1	2000	4020000	3	0	0	0	0
+508	1	0	TaskNameId_500	TaskDesId_508	Icon_Xhp_002	14			2	1	1	507	509	508	Heros_GREEN_2_QualityNum	6	1	2000	4020000	3	0	0	0	0
+509	1	0	TaskNameId_500	TaskDesId_509	Icon_Xhp_002	14			2	1	1	508	510	509	Heros_BLUE_QualityNum	1	1	2000	4020000	3	0	0	0	0
+510	1	0	TaskNameId_500	TaskDesId_510	Icon_Xhp_002	14			2	1	1	509	511	510	Heros_BLUE_QualityNum	3	1	2000	4020000	3	0	0	0	0
+511	1	0	TaskNameId_500	TaskDesId_511	Icon_Xhp_002	14			2	1	1	510	512	511	Heros_BLUE_QualityNum	6	1	2000	4020000	3	0	0	0	0
+512	1	0	TaskNameId_500	TaskDesId_512	Icon_Xhp_002	14			2	1	1	511	513	512	Heros_BLUE_1_QualityNum	1	1	3000	4020000	3	0	0	0	0
+513	1	0	TaskNameId_500	TaskDesId_513	Icon_Xhp_002	14			2	1	1	512	514	513	Heros_BLUE_1_QualityNum	3	1	3000	4020000	3	0	0	0	0
+514	1	0	TaskNameId_500	TaskDesId_514	Icon_Xhp_002	14			2	1	1	513	515	514	Heros_BLUE_1_QualityNum	6	1	3000	4020000	3	0	0	0	0
+515	1	0	TaskNameId_500	TaskDesId_515	Icon_Xhp_002	14			2	1	1	514	516	515	Heros_BLUE_2_QualityNum	1	1	3000	4020000	5	0	0	0	0
+516	1	0	TaskNameId_500	TaskDesId_516	Icon_Xhp_002	14			2	1	1	515	517	516	Heros_BLUE_2_QualityNum	3	1	3000	4020000	5	0	0	0	0
+517	1	0	TaskNameId_500	TaskDesId_517	Icon_Xhp_002	14			2	1	1	516	518	517	Heros_BLUE_2_QualityNum	6	1	3000	4020000	5	0	0	0	0
+518	1	0	TaskNameId_500	TaskDesId_518	Icon_Xhp_002	14			2	1	1	517	519	518	Heros_BLUE_3_QualityNum	1	1	4000	4020000	5	0	0	0	0
+519	1	0	TaskNameId_500	TaskDesId_519	Icon_Xhp_002	14			2	1	1	518	520	519	Heros_BLUE_3_QualityNum	3	1	4000	4020000	5	0	0	0	0
+520	1	0	TaskNameId_500	TaskDesId_520	Icon_Xhp_002	14			2	1	1	519	521	520	Heros_BLUE_3_QualityNum	6	1	4000	4020000	5	0	0	0	0
+521	1	0	TaskNameId_500	TaskDesId_521	Icon_Xhp_002	14			2	1	1	520	522	521	Heros_PURPLE_QualityNum	1	1	4000	4020000	5	0	0	0	0
+522	1	0	TaskNameId_500	TaskDesId_522	Icon_Xhp_002	14			2	1	1	521	523	522	Heros_PURPLE_QualityNum	3	1	4000	4020000	5	0	0	0	0
+523	1	0	TaskNameId_500	TaskDesId_523	Icon_Xhp_002	14			2	1	1	522	524	523	Heros_PURPLE_QualityNum	6	1	4000	4020000	5	0	0	0	0
+524	1	0	TaskNameId_500	TaskDesId_524	Icon_Xhp_002	14			2	1	1	523	525	524	Heros_PURPLE_1_QualityNum	1	1	5000	4020000	5	0	0	0	0
+525	1	0	TaskNameId_500	TaskDesId_525	Icon_Xhp_002	14			2	1	1	524	526	525	Heros_PURPLE_1_QualityNum	3	1	5000	4020000	5	0	0	0	0
+526	1	0	TaskNameId_500	TaskDesId_526	Icon_Xhp_002	14			2	1	1	525	527	526	Heros_PURPLE_1_QualityNum	6	1	5000	4020000	5	0	0	0	0
+527	1	0	TaskNameId_500	TaskDesId_527	Icon_Xhp_002	14			2	1	1	526	528	527	Heros_PURPLE_2_QualityNum	1	1	5000	4020000	5	0	0	0	0
+528	1	0	TaskNameId_500	TaskDesId_528	Icon_Xhp_002	14			2	1	1	527	529	528	Heros_PURPLE_2_QualityNum	3	1	5000	4020000	5	0	0	0	0
+529	1	0	TaskNameId_500	TaskDesId_529	Icon_Xhp_002	14			2	1	1	528	530	529	Heros_PURPLE_2_QualityNum	6	1	5000	4020000	5	0	0	0	0
+530	1	0	TaskNameId_500	TaskDesId_530	Icon_Xhp_002	14			2	1	1	529	531	530	Heros_PURPLE_3_QualityNum	1	1	6000	4020000	7	0	0	0	0
+531	1	0	TaskNameId_500	TaskDesId_531	Icon_Xhp_002	14			2	1	1	530	532	531	Heros_PURPLE_3_QualityNum	3	1	6000	4020000	7	0	0	0	0
+532	1	0	TaskNameId_500	TaskDesId_532	Icon_Xhp_002	14			2	1	1	531	533	532	Heros_PURPLE_3_QualityNum	6	1	6000	4020000	7	0	0	0	0
+533	1	0	TaskNameId_500	TaskDesId_533	Icon_Xhp_002	14			2	1	1	532	534	533	Heros_PURPLE_4_QualityNum	1	1	6000	4020000	7	0	0	0	0
+534	1	0	TaskNameId_500	TaskDesId_534	Icon_Xhp_002	14			2	1	1	533	535	534	Heros_PURPLE_4_QualityNum	3	1	6000	4020000	7	0	0	0	0
+535	1	0	TaskNameId_500	TaskDesId_535	Icon_Xhp_002	14			2	1	1	534	539	535	Heros_PURPLE_4_QualityNum	6	1	6000	4020000	7	0	0	0	0
+539	1	0	TaskNameId_500	TaskDesId_539	Icon_Xhp_002	14			2	1	1	535	540	539	Heros_ORANGE_QualityNum	1	1	7000	4020000	7	0	0	0	0
+540	1	0	TaskNameId_500	TaskDesId_540	Icon_Xhp_002	14			2	1	1	539	541	540	Heros_ORANGE_QualityNum	3	1	7000	4020000	7	0	0	0	0
+541	1	0	TaskNameId_500	TaskDesId_541	Icon_Xhp_002	14			2	1	1	540	542	541	Heros_ORANGE_QualityNum	6	1	7000	4020000	7	0	0	0	0
+542	1	0	TaskNameId_500	TaskDesId_542	Icon_Xhp_002	14			2	1	1	541	543	542	Heros_ORANGE_1_QualityNum	1	1	7000	4020000	7	0	0	0	0
+543	1	0	TaskNameId_500	TaskDesId_543	Icon_Xhp_002	14			2	1	1	542	544	543	Heros_ORANGE_1_QualityNum	3	1	7000	4020000	7	0	0	0	0
+544	1	0	TaskNameId_500	TaskDesId_544	Icon_Xhp_002	14			2	1	1	543	545	544	Heros_ORANGE_1_QualityNum	6	1	7000	4020000	7	0	0	0	0
+545	1	0	TaskNameId_500	TaskDesId_545	Icon_Xhp_002	14			2	1	1	544	546	545	Heros_ORANGE_2_QualityNum	1	1	8000	4020000	7	0	0	0	0
+546	1	0	TaskNameId_500	TaskDesId_546	Icon_Xhp_002	14			2	1	1	545	547	546	Heros_ORANGE_2_QualityNum	3	1	8000	4020000	7	0	0	0	0
+547	1	0	TaskNameId_500	TaskDesId_547	Icon_Xhp_002	14			2	1	1	546	548	547	Heros_ORANGE_2_QualityNum	6	1	8000	4020000	7	0	0	0	0
+548	1	0	TaskNameId_500	TaskDesId_548	Icon_Xhp_002	14			2	1	1	547	549	548	Heros_ORANGE_3_QualityNum	1	1	8000	4020000	10	0	0	0	0
+549	1	0	TaskNameId_500	TaskDesId_549	Icon_Xhp_002	14			2	1	1	548	550	549	Heros_ORANGE_3_QualityNum	3	1	8000	4020000	10	0	0	0	0
+550	1	0	TaskNameId_500	TaskDesId_550	Icon_Xhp_002	14			2	1	1	549	551	550	Heros_ORANGE_3_QualityNum	6	1	8000	4020000	10	0	0	0	0
+551	1	0	TaskNameId_500	TaskDesId_551	Icon_Xhp_002	14			2	1	1	550	552	551	Heros_ORANGE_4_QualityNum	1	1	9000	4020000	10	0	0	0	0
+552	1	0	TaskNameId_500	TaskDesId_552	Icon_Xhp_002	14			2	1	1	551	553	552	Heros_ORANGE_4_QualityNum	3	1	9000	4020000	10	0	0	0	0
+553	1	0	TaskNameId_500	TaskDesId_553	Icon_Xhp_002	14			2	1	1	552	554	553	Heros_ORANGE_4_QualityNum	6	1	9000	4020000	10	0	0	0	0
+554	1	0	TaskNameId_500	TaskDesId_554	Icon_Xhp_002	14			2	1	1	553	555	554	Heros_ORANGE_5_QualityNum	1	1	9000	4020000	10	0	0	0	0
+555	1	0	TaskNameId_500	TaskDesId_555	Icon_Xhp_002	14			2	1	1	554	556	555	Heros_ORANGE_5_QualityNum	3	1	9000	4020000	10	0	0	0	0
+556	1	0	TaskNameId_500	TaskDesId_556	Icon_Xhp_002	14			2	1	1	555	557	556	Heros_ORANGE_5_QualityNum	6	1	9000	4020000	10	0	0	0	0
+557	1	0	TaskNameId_500	TaskDesId_557	Icon_Xhp_002	14			2	1	1	556	558	557	Heros_RED_QualityNum	1	1	10000	4020000	10	0	0	0	0
+558	1	0	TaskNameId_500	TaskDesId_558	Icon_Xhp_002	14			2	1	1	557	559	558	Heros_RED_QualityNum	3	1	10000	4020000	10	0	0	0	0
+559	1	0	TaskNameId_500	TaskDesId_559	Icon_Xhp_002	14			2	1	1	558	560	559	Heros_RED_QualityNum	6	1	10000	4020000	10	0	0	0	0
+560	1	0	TaskNameId_500	TaskDesId_560	Icon_Xhp_002	14			2	1	1	559	561	560	Heros_RED_1_QualityNum	1	1	10000	4020000	10	0	0	0	0
+561	1	0	TaskNameId_500	TaskDesId_561	Icon_Xhp_002	14			2	1	1	560	562	561	Heros_RED_1_QualityNum	3	1	10000	4020000	10	0	0	0	0
+562	1	0	TaskNameId_500	TaskDesId_562	Icon_Xhp_002	14			2	1	1	561	0	562	Heros_RED_1_QualityNum	6	1	10000	4020000	10	0	0	0	0
+600	0	0	TaskNameId_600	TaskDesId_600	Icon_Xhp_006	14			2	1	1	0	0	0		1	10	100	4	100	0	0	0	0

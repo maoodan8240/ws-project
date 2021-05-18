@@ -1,0 +1,11 @@
+ID	解锁等级	解锁特权等级	开启消耗	解锁前置id
+ID	OpeningLevel	OpeningVipLevel	OpeningConsume	PreOpeningID
+int	int	int	int	int
+1	25	0	0	0
+2	33	0	0	1
+3	40	0	25	2
+4	48	0	35	3
+5	54	0	70	4
+6	65	0	140	5
+7	0	2	88	0
+8	0	5	166	7

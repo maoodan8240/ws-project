@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/aggregator.iml" filepath="$PROJECT_DIR$/.idea/aggregator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../analogClient/analogClient.iml" filepath="$PROJECT_DIR$/../analogClient/analogClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../chatServer/chatServer.iml" filepath="$PROJECT_DIR$/../chatServer/chatServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../clusterCenterServer/clusterCenterServer.iml" filepath="$PROJECT_DIR$/../clusterCenterServer/clusterCenterServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gameServer/gameServer.iml" filepath="$PROJECT_DIR$/../gameServer/gameServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gatewayServer/gatewayServer.iml" filepath="$PROJECT_DIR$/../gatewayServer/gatewayServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../logServer/logServer.iml" filepath="$PROJECT_DIR$/../logServer/logServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../loginServer/loginServer.iml" filepath="$PROJECT_DIR$/../loginServer/loginServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mongodbRedisServer/mongodbRedisServer.iml" filepath="$PROJECT_DIR$/../mongodbRedisServer/mongodbRedisServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../particularFunctionServer/particularFunctionServer.iml" filepath="$PROJECT_DIR$/../particularFunctionServer/particularFunctionServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../relationship/relationship.iml" filepath="$PROJECT_DIR$/../relationship/relationship.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sdk/sdk.iml" filepath="$PROJECT_DIR$/../sdk/sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../thirdPartyServer/thirdPartyServer.iml" filepath="$PROJECT_DIR$/../thirdPartyServer/thirdPartyServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ws-gm-server/ws-gm-server.iml" filepath="$PROJECT_DIR$/../ws-gm-server/ws-gm-server.iml" />
+    </modules>
+  </component>
+</project>

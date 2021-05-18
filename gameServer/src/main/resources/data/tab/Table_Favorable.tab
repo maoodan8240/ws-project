@@ -1,0 +1,10 @@
+阶段ID	阶段满级	后置阶段ID	阶段女性名称	阶段男性名称
+Id	ClassLevel	AfterClass	ClassWomanName	ClassManName
+int	int	int	int	int
+1	20	2	0	0
+2	40	3	0	0
+3	60	4	0	0
+4	80	5	0	0
+5	100	6	0	0
+6	100	7	0	0
+7	100	0	0	0

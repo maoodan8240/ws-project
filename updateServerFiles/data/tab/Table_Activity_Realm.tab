@@ -1,0 +1,9 @@
+服活动	是否有效的活动	活动开始时间1	活动结束时间1	活动展示时间1	活动开始时间2	活动结束时间2	活动展示时间2	每日是否重置	开服天数需求	玩家等级需求	玩家VIP等级需求	服务器范围	活动组	额外参数
+Id	IsEffective	StartTime1	EndTime1	ShowEndTime1	StartTime2	EndTime2	ShowEndTime2	DailyReset	ServerOpenDays	PlayerLevel	PlayerVipLevel	ServerScope	ActivityGroupId	OtherArgs
+int	int	string	string	string	string	string	string	int	int	int	int	string	int	string
+10000	1							0	0	1	0	1:1000	1	
+10001	1							0	0	1	0	1:1000	2	
+10002	1							0	0	15	0	1:1000	3	
+10003	1	201707110500	201710200500	201710200500				0	0	1	0	1:1000	4	
+10004	1	201707110500	201710200500	201710200500				0	0	1	0	1:1000	5	
+10005	1	201708080500	201709080500	201709080500				0	0	1	3	1:1000	6	1

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../analogClient" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../analogClient/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../analogClient/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../chatServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../chatServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../chatServer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../clusterCenterServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../clusterCenterServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../clusterCenterServer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gameServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gameServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gameServer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gatewayServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gatewayServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gatewayServer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../logServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../logServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../logServer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../loginServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../loginServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../loginServer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../mongodbRedisServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../mongodbRedisServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../mongodbRedisServer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../particularFunctionServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../particularFunctionServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../particularFunctionServer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../relationship" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../relationship/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../relationship/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../sdk" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../sdk/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../sdk/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../thirdPartyServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../thirdPartyServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../thirdPartyServer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../ws-gm-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../ws-gm-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../ws-gm-server/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

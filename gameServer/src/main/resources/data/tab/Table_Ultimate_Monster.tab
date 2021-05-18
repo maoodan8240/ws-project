@@ -1,0 +1,7 @@
+ID	怪物ID	攻击倍率	防御倍率	生命倍率
+Id	MonsterID	AttackPro	DefencePro	HpPro
+int	int	int	int	int
+1	100	2	1	10
+2	101	2	1	10
+3	102	2	1	10
+4	103	2	1	10

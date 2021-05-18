@@ -1,0 +1,5 @@
+ID	发送金币特权等级限制	发送钻石特权等级限制	发金币红包消耗	发钻石红包消耗	金币红包总个数	钻石红包总个数	发金币红包获得	发钻石红包获得	金币红包总额	钻石红包总额
+ID	GoldRedPacketVipLv	VipMoneyRedPacketVipLv	GoldRedPacketCosume	VipMoneyRedPacketCosume	GoldRedPacketCount	VipMoneyRedPacketCount	GoldRedPacketReward	VipMoneyRedPacketReward	GoldMaxValue	VipMoneyMaxValue
+int	int	int	int	int	int	int	string	string	int	int
+1	1	2	88	128	10	15	1:88888,4110001:3	4110401:1,4110402:1,4110203:2	88888	128
+2	5	7	228	528	15	15	1:288888,4110001:6	4110401:5,4110402:1,4110203:8	288888	528

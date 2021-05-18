@@ -1,0 +1,10 @@
+模版ID	模版邮件的标题	模版邮件的内容	附件	发送者	存储时间	阅读后是否删除
+Id	Title	Content	attachments	SenderName	StoreTime	isReadedDelete
+int	string	string	string	string	int	int
+1	Title_1	Mail_Content_2		SenderName_1	1440	1
+2	Title_2	Mail_Content_3		SenderName_2	1440	1
+3	Title_3	Mail_Content_4		SenderName_3	1440	1
+4	Title_4	Mail_Content_5		SenderName_4	1440	1
+5	Title_5	Mail_Content_6		SenderName_5	1440	1
+6	Title_6	Mail_Content_7		SenderName_6	1440	1
+7	Title_7	Mail_Content_8		SenderName_7	1440	1

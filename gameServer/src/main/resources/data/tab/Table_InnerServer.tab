@@ -1,0 +1,4 @@
+下标	内部服Id	服务器角色	网关地址	开服日期
+Id	InnerRealmId	ServerRole	GateURL	OpenDate
+int	int	string	string	int
+1	1	WS-GameServer-192.168.0.56-23000	31	41

@@ -1,0 +1,6 @@
+
+#### 固定周期保存Redis中玩家的数据到Mongodb中
+#### */1 * * * * java:Cron4jUtils#pojoSaver
+
+#### 固定周期查找已经很长时间没有登录游戏的玩家，从Redis中移除并再从保存到Mongodb中
+#### * */1 * * * java:Cron4jUtils#pojoRemover

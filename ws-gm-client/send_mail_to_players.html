@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title> 单人邮件</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>单人邮件</h5>
+                </div>
+                <div class="ibox-content form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">收件人</label>
+
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="ids" id="ids"
+                                   placeholder="填写收件人,多个收件人用逗号分隔">
+                            <!--<span class="help-block m-b-none">多个收件人用逗号分隔</span>-->
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">标题</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="title" id="title" class="form-control" placeholder="邮件标题">
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">内容</label>
+
+                        <div class="col-sm-10">
+                                <textarea class="form-control" name="content" id="content" rows="5"
+                                          placeholder="邮件内容"></textarea>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">过期时间</label>
+
+                        <div class="col-sm-10">
+                            <input id="expireTime" name="expireTime" class="form-control layer-date"
+                                   placeholder="YYYY-MM-DD hh:mm:ss"
+                                   onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+                            <label class="laydate-icon"></label>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">是否阅后即焚
+                            <br/>
+                        </label>
+
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                <label>
+                                    <input name="deleteAfterRead" checked="checked" type="radio" value="true"
+                                           id="optionsRadios1">是</label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input name="deleteAfterRead" type="radio" value="false"
+                                           id="optionsRadios2">否</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">附件</label>
+                        <div class="col-sm-8">
+                            <input type="text" disabled class="form-control" id="selectedItems" name="selectedItems"
+                                   placeholder="">
+                            <input type="hidden" id="selectedItemsTxt" name="selectedItemsTxt" value=""/>
+                        </div>
+                        <div class="col-sm-2">
+                            <button class="btn btn-sm btn-info" onclick="openChooseItemPage()">选择[&nbsp;资源&nbsp;/&nbsp;武将&nbsp;/道具&nbsp;]</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">发送人</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" placeholder="发送人" name="senderName"
+                                   id="senderName">
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <div class="col-sm-4 col-sm-offset-2">
+                            <button class="btn btn-primary" type="button" onclick="sendMailToPlayers()">发送邮件
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 全局js -->
+<script src="js/jquery.min.js?v=2.1.4"></script>
+<script src="js/bootstrap.min.js?v=3.3.6"></script>
+
+<!-- 自定义js -->
+<script src="js/content.js?v=1.0.0"></script>
+<script src="js/xcConfirm.js" type="text/javascript" charset="utf-8"></script>
+<!-- loading -->
+<script src="./js/jquery-ui-jqLoding.js" type="text/javascript"></script>
+
+<script src="js/plugins/layer/laydate/laydate.js"></script>
+<script type="text/javascript" src="wsjs/core.js"></script>
+<script type="text/javascript" src="wsjs/mail.js"></script>
+
+
+</body>
+
+</html>

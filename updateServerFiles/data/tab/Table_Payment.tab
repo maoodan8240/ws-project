@@ -1,0 +1,11 @@
+下标	内部编号	渠道	支付商品名称	买的元宝数	支付人民币金额	第一次赠送的元宝
+Id	InnerId	PlatformType	GoodName	VipMoneyCount	RMBPrice	FirstVipMoney
+int	int	int	string	int	int	int
+99911	11	999	com.awo.25	300	25	300
+99912	12	999	com.awo.88	880	88	880
+99913	13	999	com.awo.6	60	6	60
+99914	14	999	com.awo.30	300	30	300
+99915	15	999	com.awo.98	980	98	980
+99916	16	999	com.awo.198	1980	198	1980
+99917	17	999	com.awo.328	3280	328	3280
+99918	18	999	com.awo.648	6480	648	6480

@@ -1,0 +1,45 @@
+Id	组活动Id	活动完成类型	活动完成数量需求	完成条件-玩家等级需求	完成条件-玩家VIP等级需求	兑换消耗	兑换的次数	奖励1	奖励1数量	奖励2	奖励2数量	奖励3	奖励3数量	奖励4	奖励4数量	奖励5	奖励5数量	子活动的描述
+Id	GroupId	CompleteType	CompleteCondition	CompletePlayerLevel	CompletePlayerVipLevel	ExchangeConsume	CanExchangeTimes	Reward1Id	Reward1Number	Reward2Id	Reward2Number	Reward3Id	Reward3Number	Reward4Id	Reward4Number	Reward5Id	Reward5Number	ActivityDes
+int	int	string	string	int	int	string	int	int	int	int	int	int	int	int	int	int	int	string
+101	1	Payment_FirstPay	1	1	0		0	4070026	50	3	120	4080002	50	1	200000	0	0	
+201	2	Other_General	1	1	0		0	4070028	3	2	60	1	6000	4080001	30	0	0	登录第1天
+202	2	Other_General	1	1	0		0	1000018	1	2	80	4110001	10	1	8000	0	0	登录第2天
+203	2	Other_General	1	1	0		0	1000002	1	2	80	4080002	20	1	10000	0	0	登录第3天
+204	2	Other_General	1	1	0		0	4030003	4	9	500	2	100	1	12000	0	0	登录第4天
+205	2	Other_General	1	1	0		0	4030004	4	7	500	2	100	1	15000	0	0	登录第5天
+206	2	Other_General	1	1	0		0	4100005	5	6	3	2	120	1	20000	0	0	登录第6天
+207	2	Other_General	1	1	0		0	4100004	2	4100007	5	2	120	1	25000	0	0	登录第7天
+301	3	Player_LevelUp	15	15	3		0	2	300	0	0	0	0	0	0	0	0	达到15级可领取
+302	3	Player_LevelUp	20	15	3		0	2	300	0	0	0	0	0	0	0	0	达到20级可领取
+303	3	Player_LevelUp	25	15	3		0	2	400	0	0	0	0	0	0	0	0	达到25级可领取
+304	3	Player_LevelUp	30	15	3		0	2	500	0	0	0	0	0	0	0	0	达到30级可领取
+305	3	Player_LevelUp	35	15	3		0	2	500	0	0	0	0	0	0	0	0	达到35级可领取
+306	3	Player_LevelUp	40	15	3		0	2	600	0	0	0	0	0	0	0	0	达到40级可领取
+307	3	Player_LevelUp	45	15	3		0	2	700	0	0	0	0	0	0	0	0	达到45级可领取
+308	3	Player_LevelUp	50	15	3		0	2	800	0	0	0	0	0	0	0	0	达到50级可领取
+309	3	Player_LevelUp	55	15	3		0	2	900	0	0	0	0	0	0	0	0	达到55级可领取
+310	3	Player_LevelUp	60	15	3		0	2	1000	0	0	0	0	0	0	0	0	达到60级可领取
+311	3	Player_LevelUp	70	15	3		0	2	1000	0	0	0	0	0	0	0	0	达到70级可领取
+312	3	Player_LevelUp	80	15	3		0	2	1000	0	0	0	0	0	0	0	0	达到80级可领取
+313	3	Player_LevelUp	90	15	3		0	2	1000	0	0	0	0	0	0	0	0	达到90级可领取
+314	3	Player_LevelUp	100	15	3		0	2	1000	0	0	0	0	0	0	0	0	达到100级可领取
+401	4	Payment_DaliyPay	60	0	0		0	4100007	1	4020000	10	4110507	25	0	0	0	0	充值60钻
+402	4	Payment_DaliyPay	300	0	0		0	4100007	3	4100004	1	4020000	12	4110507	50	0	0	充值300钻
+403	4	Payment_DaliyPay	600	0	0		0	4100007	5	4100004	3	4020000	14	4110508	75	0	0	充值600钻
+404	4	Payment_DaliyPay	1000	0	0		0	4070007	10	4110508	75	4020000	16	1	100000	0	0	充值1000钻
+405	4	Payment_DaliyPay	1500	0	0		0	4070007	10	4110503	20	4080003	10	1	100000	4020000	18	充值1500钻
+406	4	Payment_DaliyPay	2000	0	0		0	4070007	10	4110503	30	4080003	10	1	100000	4020000	20	充值2000钻
+407	4	Payment_DaliyPay	3000	0	0		0	4070007	10	4110502	40	4080004	10	1	150000	4020000	22	充值3000钻
+408	4	Payment_DaliyPay	5000	0	0		0	4070007	15	4110502	40	4080004	10	1	150000	4020000	24	充值5000钻
+409	4	Payment_DaliyPay	10000	0	0		0	4070007	20	4110502	50	4100005	10	1	200000	4020000	27	充值10000钻
+410	4	Payment_DaliyPay	20000	0	0		0	4070007	25	4110502	50	4100005	20	1	200000	4020000	30	充值20000钻
+501	5	ResourcePoint_DaliyConsumes	2:60	0	0		0	4110501	5	4110509	4	4100002	30	1	100000	0	0	累积消耗60钻
+502	5	ResourcePoint_DaliyConsumes	2:300	0	0		0	4110501	10	4110510	4	4100002	50	1	100000	0	0	累积消耗300钻
+503	5	ResourcePoint_DaliyConsumes	2:600	0	0		0	4100004	5	4110511	4	4110512	4	1	200000	0	0	累积消耗600钻
+504	5	ResourcePoint_DaliyConsumes	2:1000	0	0		0	4070019	10	4110503	20	4110501	10	1	100000	0	0	累积消耗1000钻
+505	5	ResourcePoint_DaliyConsumes	2:1500	0	0		0	4070019	10	4110503	20	4110501	10	1	100000	0	0	累积消耗1500钻
+506	5	ResourcePoint_DaliyConsumes	2:2000	0	0		0	4070019	10	4110503	30	4100002	10	1	100000	0	0	累积消耗2000钻
+507	5	ResourcePoint_DaliyConsumes	2:3000	0	0		0	4070019	10	4110502	40	4100002	20	1	150000	0	0	累积消耗3000钻
+508	5	ResourcePoint_DaliyConsumes	2:5000	0	0		0	4070019	15	4110502	40	4100002	30	1	150000	0	0	累积消耗5000钻
+509	5	ResourcePoint_DaliyConsumes	2:10000	0	0		0	4070019	20	4110502	50	4110505	10	1	200000	0	0	累积消耗10000钻
+510	5	ResourcePoint_DaliyConsumes	2:20000	0	0		0	4070019	25	4110502	50	4110506	10	1	200000	0	0	累积消耗20000钻

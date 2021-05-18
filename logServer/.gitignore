@@ -1,0 +1,6 @@
+log
+target/
+libs/
+*.iml
+src/main/resources/log/
+.idea/

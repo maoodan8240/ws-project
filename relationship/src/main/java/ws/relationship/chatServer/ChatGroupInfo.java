@@ -1,0 +1,39 @@
+package ws.relationship.chatServer;
+
+import ws.protos.EnumsProtos.ChatTypeEnum;
+import ws.relationship.base.WsCloneable;
+
+import java.io.Serializable;
+
+/**
+ * Created by zhangweiwei on 17-5-4.
+ */
+public class ChatGroupInfo implements Serializable, WsCloneable<ChatGroupInfo> {
+    private static final long serialVersionUID = 3604136510577191319L;
+    private ChatTypeEnum type;        // 组类型
+    private String groupId;           // 组Id
+    private String groupName;         // 组名称
+
+    public ChatGroupInfo(ChatTypeEnum type, String groupId, String groupName) {
+        this.type = type;
+        this.groupId = groupId;
+        this.groupName = groupName;
+    }
+
+    public ChatTypeEnum getType() {
+        return type;
+    }
+
+    public String getGroupId() {
+        return groupId;
+    }
+
+    public String getGroupName() {
+        return groupName;
+    }
+
+    @Override
+    public ChatGroupInfo clone() {
+        return new ChatGroupInfo(type, groupId, groupName);
+    }
+}
