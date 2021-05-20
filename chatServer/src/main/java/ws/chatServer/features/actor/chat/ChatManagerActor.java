@@ -16,7 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by zhangweiwei on 17-5-4.
+ * Created by lee on 17-5-4.
  */
 public class ChatManagerActor extends WsActor {
     private static final Logger LOGGER = LoggerFactory.getLogger(ChatManagerActor.class);

@@ -4,7 +4,7 @@ import com.alibaba.fastjson.annotation.JSONField;
 import ws.common.mongoDB.interfaces.TopLevelPojo;
 
 /**
- * Created by zhangweiwei on 17-5-5.
+ * Created by lee on 17-5-5.
  */
 public class OuterToInnerRealmList implements TopLevelPojo, Cloneable {
     private static final long serialVersionUID = 8553903732891647206L;

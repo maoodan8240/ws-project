@@ -5,7 +5,7 @@ import ws.relationship.base.WsCloneable;
 import java.io.Serializable;
 
 /**
- * Created by zhangweiwei on 16-10-8..
+ * Created by lee on 16-10-8..
  */
 public class LevelUpObj implements Serializable, WsCloneable<LevelUpObj> {
     private static final long serialVersionUID = 2590615314049641662L;

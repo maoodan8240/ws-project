@@ -4,10 +4,10 @@ import ws.analogClient.features.Action;
 import ws.analogClient.features.ActionResult;
 import ws.analogClient.features.utils.ClientUtils;
 import ws.analogClient.system.config.AppConfig;
+import ws.protos.EnumsProtos;
 import ws.protos.MessageHandlerProtos.Response;
 import ws.protos.PlayerLoginProtos.Cm_Login;
 import ws.protos.PlayerLoginProtos.Sm_Login;
-import ws.protos.errorCode.ErrorCodeProtos.ErrorCodeEnum;
 
 public class AuthAction implements Action {
     @Override
@@ -24,7 +24,7 @@ public class AuthAction implements Action {
             Sm_Login login = response.getSmLogin();
             if (login.getAction() == Sm_Login.Action.RESP_AUTH) {
                 if (!response.getResult()) {
-                    if (response.getErrorCode() == ErrorCodeEnum.UNREGISTERED) {
+                    if (response.getErrorCode() == EnumsProtos.ErrorCodeEnum.UNREGISTERED) {
                         return new ActionResult(true, login.getSecurityCode(), "", "", objects[1].toString()); // account name
                     } else {
                         return new ActionResult(false);

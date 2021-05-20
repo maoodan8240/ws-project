@@ -6,7 +6,7 @@ import ws.relationship.base.WsCloneable;
 import java.io.Serializable;
 
 /**
- * Created by zhangweiwei on 17-5-4.
+ * Created by lee on 17-5-4.
  */
 public class ChatGroupInfo implements Serializable, WsCloneable<ChatGroupInfo> {
     private static final long serialVersionUID = 3604136510577191319L;

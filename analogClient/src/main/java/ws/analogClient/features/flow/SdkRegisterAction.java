@@ -11,7 +11,7 @@ import ws.analogClient.features.ActionResult;
 import ws.analogClient.system.config.AppConfig;
 import ws.analogClient.system.config.AppConfig.Key;
 import ws.common.utils.http.WsHttpClient;
-import ws.protos.errorCode.ErrorCodeProtos.ErrorCodeEnum;
+import ws.protos.EnumsProtos;
 
 public class SdkRegisterAction implements Action {
     private static final Logger LOGGER = LoggerFactory.getLogger(SdkRegisterAction.class);
@@ -32,7 +32,7 @@ public class SdkRegisterAction implements Action {
         boolean rs = (boolean) jsonObject.get("_success");
         if (!rs) {
             int errorCode = (int) jsonObject.get("_errorCode");
-            LOGGER.error("sdk 注册失败！errorCode={} ", ErrorCodeEnum.valueOf(errorCode));
+            LOGGER.error("sdk 注册失败！errorCode={} ", EnumsProtos.ErrorCodeEnum.valueOf(errorCode));
         }
         return new ActionResult(rs, newAccount);
     }

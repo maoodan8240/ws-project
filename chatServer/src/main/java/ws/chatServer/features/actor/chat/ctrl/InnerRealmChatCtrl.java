@@ -9,7 +9,7 @@ import ws.relationship.base.msg.chat.SendCacheMsgs;
 import ws.relationship.chatServer.Cm_Chat_Msg_WithPlayerId;
 
 /**
- * Created by zhangweiwei on 17-5-4.
+ * Created by lee on 17-5-4.
  */
 public interface InnerRealmChatCtrl extends Controler<PojoHandler> {
 

@@ -3,7 +3,7 @@ package ws.gatewayServer.features.actor.message;
 import akka.actor.Address;
 
 /**
- * Created by zhangweiwei on 17-7-5.
+ * Created by lee on 17-7-5.
  */
 public class ConnectionAttachment implements Cloneable {
     private Address address;

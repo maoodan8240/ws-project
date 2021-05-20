@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by zhangweiwei on 17-5-4.
+ * Created by lee on 17-5-4.
  */
 public class PrivateChatRelation {
     private long relationId;

@@ -11,7 +11,7 @@ import ws.relationship.table.tableRows.Table_NameLibrary_Row;
 import ws.relationship.topLevelPojos.names.Names;
 
 /**
- * Created by zhangweiwei on 17-6-6.
+ * Created by lee on 17-6-6.
  */
 public class NameUtils {
     private static final MongoDBClient MONGO_DB_CLIENT = GlobalInjector.getInstance(MongoDBClient.class);

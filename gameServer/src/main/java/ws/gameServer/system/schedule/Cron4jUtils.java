@@ -11,7 +11,6 @@ import ws.common.utils.di.GlobalInjector;
 import ws.common.utils.monitor._Monitor;
 import ws.gameServer.features.actor.world.msg.In_NoticeToKillOverTimeCachePlayerActorRequest;
 import ws.gameServer.features.standalone.actor.arenaCenter.msg.In_SettleDaliyRankReward;
-import ws.gameServer.features.standalone.actor.newGuildCenter.msg.In_NewGuildRedBagSendSysRedBag;
 import ws.gameServer.system.actor.WsActorSystem;
 import ws.gameServer.system.date.dayChanged.DayChanged;
 import ws.gameServer.system.date.dayChanged.In_DayChanged;
@@ -106,7 +105,6 @@ public class Cron4jUtils {
     public static void guildCenterSendSysRedBag(String[] args) {
         LOGGER.info("定时调度任务:guildCenterSendSysRedBag 社团发系统红包");
         ActorSelection actorSelection = WsActorSystem.get().actorSelection(ActorSystemPath.WS_GameServer_Selection_GuildCenter);
-        actorSelection.tell(new In_NewGuildRedBagSendSysRedBag.Request(), ActorRef.noSender());
     }
 
     /**

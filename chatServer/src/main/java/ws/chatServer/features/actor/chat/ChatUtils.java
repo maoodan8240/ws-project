@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by zhangweiwei on 17-5-4.
+ * Created by lee on 17-5-4.
  */
 public class ChatUtils {
     public static ChatMsg removeOverflowMsg(List<ChatMsg> msgList) {

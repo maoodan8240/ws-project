@@ -9,20 +9,11 @@ import ws.common.mongoDB.interfaces.MongoDBClient;
 import ws.common.utils.di.GlobalInjector;
 import ws.common.utils.mc.controler.AbstractControler;
 import ws.common.utils.message.interfaces.PrivateMsg;
-import ws.gameServer.features.standalone.actor.arenaCenter.msg.In_AddPlayerToPvpCenter;
-import ws.gameServer.features.standalone.actor.arenaCenter.msg.In_ExchangeRank;
-import ws.gameServer.features.standalone.actor.arenaCenter.msg.In_GetRankToPvpCenter;
-import ws.gameServer.features.standalone.actor.arenaCenter.msg.In_GotoSettleDaliyRankReward;
-import ws.gameServer.features.standalone.actor.arenaCenter.msg.In_QueryEnemies;
-import ws.gameServer.features.standalone.extp.mails.utils.MailsCtrlUtils;
+import ws.gameServer.features.standalone.actor.arenaCenter.msg.*;
 import ws.gameServer.features.standalone.extp.utils.LogicCheckUtils;
 import ws.relationship.base.IdMaptoCount;
 import ws.relationship.base.MagicNumbers;
 import ws.relationship.base.MagicWords_Redis;
-import ws.relationship.base.cluster.ActorSystemPath;
-import ws.relationship.base.msg.CheckPlayerOnlineMsgRequest;
-import ws.relationship.base.msg.mail.In_AddGmMail;
-import ws.relationship.base.msg.mail.In_AddGmMail.Request;
 import ws.relationship.daos.arenaCenterRanker.ArenaCenterRankerDao;
 import ws.relationship.exception.BusinessLogicMismatchConditionException;
 import ws.relationship.table.AllServerConfig;
@@ -30,21 +21,13 @@ import ws.relationship.table.RootTc;
 import ws.relationship.table.tableRows.Table_RankDailyReward_Row;
 import ws.relationship.table.tableRows.Table_Robot_Row;
 import ws.relationship.topLevelPojos.common.TopLevelHolder;
-import ws.relationship.topLevelPojos.mails.SysMail;
 import ws.relationship.topLevelPojos.pvp.arenaCenter.ArenaCenter;
 import ws.relationship.topLevelPojos.pvp.arenaCenter.ArenaCenterRanker;
-import ws.relationship.utils.ClusterMessageSender;
 import ws.relationship.utils.DBUtils;
 import ws.relationship.utils.InitRealmCreatedTargetsDB;
 import ws.relationship.utils.RelationshipCommonUtils;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Timer;
-import java.util.TimerTask;
+import java.util.*;
 
 
 public class _ArenaCenterCtrl extends AbstractControler<TopLevelHolder> implements ArenaCenterCtrl {
@@ -494,10 +477,6 @@ public class _ArenaCenterCtrl extends AbstractControler<TopLevelHolder> implemen
      */
     private void sendRankRewardsMail(int centerOuterRealmId, ArenaCenterRanker ranker) {
         IdMaptoCount idMaptoCount = Table_RankDailyReward_Row.getArenaRankRewards(ranker.getRank());
-        SysMail sysMail = MailsCtrlUtils.createSysMail(MagicNumbers.SYSTEM_MAIL_ID_ARENA_DALIY_RANK_REWARDS, idMaptoCount, ranker.getRank());
-        In_AddGmMail.Request addGmMailRequest = new In_AddGmMail.Request(ranker.getPlayerId(), centerOuterRealmId, sysMail);
-        CheckPlayerOnlineMsgRequest<Request> request = new CheckPlayerOnlineMsgRequest<>(ranker.getPlayerId(), addGmMailRequest);
-        ClusterMessageSender.sendMsgToPath(context, request, ActorSystemPath.WS_GameServer_Selection_World);
         LOGGER.info("开始结算竞技场排名奖励！发送排名奖励邮件. centerOuterRealmId={} playerId={} rank={} .", centerOuterRealmId, ranker.getPlayerId(), ranker.getRank());
     }
 

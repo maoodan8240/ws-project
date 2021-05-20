@@ -3,7 +3,7 @@ package ws.relationship.topLevelPojos.pyActivities;
 import java.util.LinkedHashMap;
 
 /**
- * Created by zhangweiwei on 17-6-21.
+ * Created by lee on 17-6-21.
  */
 public class PyGroupActDefault extends PyGroupAct {
     private static final long serialVersionUID = 5930293274062284680L;

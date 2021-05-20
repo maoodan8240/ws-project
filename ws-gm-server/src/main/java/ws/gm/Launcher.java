@@ -15,11 +15,7 @@ import ws.gm.system.httpServer.Ws_Gm_HttpServer;
 import ws.relationship.base.LauncherUtils;
 import ws.relationship.exception.LauncherInitException;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Launcher {
     private static final Logger logger = LoggerFactory.getLogger(Launcher.class);
@@ -66,7 +62,7 @@ public class Launcher {
         int connectionsPerHost = AppConfig.getInt(AppConfig.Key.WS_Common_Config_mongodb_connectionsPerHost);
         int minConnectionsPerHost = AppConfig.getInt(AppConfig.Key.WS_Common_Config_mongodb_minConnectionsPerHost);
         logger.debug("_mongodbInit connectionsPerHost={} minConnectionsPerHost={}", connectionsPerHost, minConnectionsPerHost);
-        MongoConfig config = new MongoConfig(host, port, userName, password, dbName, minConnectionsPerHost, connectionsPerHost);
+        MongoConfig config = new MongoConfig(host, port, userName, password, dbName, minConnectionsPerHost);
         GlobalInjector.getInstance(MongoDBClient.class).init(config);
     }
 
@@ -79,7 +75,7 @@ public class Launcher {
         int connectionsPerHost = AppConfig.getInt(Key.WS_Common_Config_mongodb_1_connectionsPerHost);
         int minConnectionsPerHost = AppConfig.getInt(Key.WS_Common_Config_mongodb_1_minConnectionsPerHost);
         logger.debug("_gameCommonMongodbInit connectionsPerHost={} minConnectionsPerHost={}", connectionsPerHost, minConnectionsPerHost);
-        MongoConfig config = new MongoConfig(host, port, userName, password, dbName, minConnectionsPerHost, connectionsPerHost);
+        MongoConfig config = new MongoConfig(host, port, userName, password, dbName, minConnectionsPerHost);
         GlobalInjector.getInstance(GameCommonDBClient.class).init(config);
     }
 

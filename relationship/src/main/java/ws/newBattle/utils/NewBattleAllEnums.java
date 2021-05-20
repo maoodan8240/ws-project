@@ -1,7 +1,7 @@
 package ws.newBattle.utils;
 
 /**
- * Created by zhangweiwei on 16-12-2.
+ * Created by lee on 16-12-2.
  */
 public class NewBattleAllEnums {
 

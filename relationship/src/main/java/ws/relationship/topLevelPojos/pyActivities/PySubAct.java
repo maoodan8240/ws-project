@@ -3,7 +3,7 @@ package ws.relationship.topLevelPojos.pyActivities;
 import java.io.Serializable;
 
 /**
- * Created by zhangweiwei on 17-6-21.
+ * Created by lee on 17-6-21.
  */
 public class PySubAct implements Serializable {
     private static final long serialVersionUID = -2865592894667699993L;

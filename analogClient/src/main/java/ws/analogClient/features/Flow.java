@@ -1,11 +1,6 @@
 package ws.analogClient.features;
 
-import ws.analogClient.features.flow.AuthAction;
-import ws.analogClient.features.flow.FunctionsAction;
-import ws.analogClient.features.flow.LoginAction;
-import ws.analogClient.features.flow.RegisterAction;
-import ws.analogClient.features.flow.SdkLoginAction;
-import ws.analogClient.features.flow.SdkRegisterAction;
+import ws.analogClient.features.flow.*;
 
 public enum Flow {
     /**

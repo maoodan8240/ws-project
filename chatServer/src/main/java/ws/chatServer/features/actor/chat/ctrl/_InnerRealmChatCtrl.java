@@ -42,7 +42,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /**
- * Created by zhangweiwei on 17-5-4.
+ * Created by lee on 17-5-4.
  */
 public class _InnerRealmChatCtrl extends AbstractControler<PojoHandler> implements InnerRealmChatCtrl {
     private static final Logger LOGGER = LoggerFactory.getLogger(_InnerRealmChatCtrl.class);

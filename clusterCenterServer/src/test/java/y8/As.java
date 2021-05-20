@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by zhangweiwei on 17-3-8.
+ * Created by lee on 17-3-8.
  */
 public class As {
     private static int getContinuousDataNumber(Map<String, Object> dailyToData) {

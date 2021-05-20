@@ -9,7 +9,7 @@ import ws.relationship.table.tableRows.Table_New_Skill_Row;
 import ws.relationship.utils.RandomUtils;
 
 /**
- * Created by zhangweiwei on 16-8-23.
+ * Created by lee on 16-8-23.
  */
 public class NewBattleCalcu {
     public static final int RATIO_BASE = MagicNumbers.RANDOM_BASE_VALUE;

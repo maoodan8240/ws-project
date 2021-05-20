@@ -5,7 +5,7 @@ import com.google.protobuf.Message;
 import java.io.Serializable;
 
 /**
- * Created by zhangweiwei on 17-5-5.
+ * Created by lee on 17-5-5.
  */
 public class Cm_Chat_Msg_WithPlayerId implements Serializable {
     private static final long serialVersionUID = -693636042602891918L;

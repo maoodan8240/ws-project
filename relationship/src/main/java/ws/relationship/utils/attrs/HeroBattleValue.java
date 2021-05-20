@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by zhangweiwei on 17-4-27.
+ * Created by lee on 17-4-27.
  */
 public class HeroBattleValue {
 

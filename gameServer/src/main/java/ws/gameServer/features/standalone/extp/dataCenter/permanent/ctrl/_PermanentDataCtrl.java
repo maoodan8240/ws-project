@@ -9,8 +9,6 @@ import ws.gameServer.features.standalone.extp.dataCenter.msg.NotifyObj;
 import ws.gameServer.features.standalone.extp.dataCenter.msg.Pr_NotifyMsg;
 import ws.gameServer.features.standalone.extp.dataCenter.msg.Pr_UpdateRegNotifyMsg;
 import ws.gameServer.features.standalone.extp.dataCenter.stageDaliy.utils.PeriodicDataUtils;
-import ws.gameServer.features.standalone.extp.heros.HerosExtp;
-import ws.gameServer.features.standalone.extp.heros.ctrl.HerosCtrl;
 import ws.gameServer.features.standalone.extp.itemBag.ItemBagExtp;
 import ws.gameServer.features.standalone.extp.itemBag.ctrl.ItemBagCtrl;
 import ws.gameServer.features.standalone.extp.itemIo.ItemIoExtp;
@@ -23,14 +21,12 @@ public class _PermanentDataCtrl extends AbstractPlayerExteControler<PermanentDat
     private static final Logger LOGGER = LoggerFactory.getLogger(_PermanentDataCtrl.class);
     private ItemIoExtp itemIoExtp;
     private ItemIoCtrl itemIoCtrl;
-    private HerosCtrl herosCtrl;
     private ItemBagCtrl itemBagCtrl;
 
     @Override
     public void _initReference() throws Exception {
         itemIoExtp = getPlayerCtrl().getExtension(ItemIoExtp.class);
         itemIoCtrl = itemIoExtp.getControlerForQuery();
-        herosCtrl = getPlayerCtrl().getExtension(HerosExtp.class).getControlerForQuery();
         itemBagCtrl = getPlayerCtrl().getExtension(ItemBagExtp.class).getControlerForQuery();
     }
 

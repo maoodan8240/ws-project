@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by zhangweiwei on 17-4-10.
+ * Created by lee on 17-4-10.
  */
 public class GmCommandContent implements Serializable {
     private static final long serialVersionUID = 3646541326622306002L;

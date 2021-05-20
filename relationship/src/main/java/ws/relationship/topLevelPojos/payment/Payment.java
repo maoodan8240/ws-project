@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by zhangweiwei on 17-5-8.
+ * Created by lee on 17-5-8.
  */
 public class Payment extends PlayerTopLevelPojo {
     private static final long serialVersionUID = -2394148713369879351L;

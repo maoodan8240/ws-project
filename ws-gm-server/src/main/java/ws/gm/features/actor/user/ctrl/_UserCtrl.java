@@ -10,17 +10,17 @@ import ws.common.mongoDB.interfaces.MongoDBClient;
 import ws.common.utils.di.GlobalInjector;
 import ws.common.utils.message.interfaces.PrivateMsg;
 import ws.gm.features.actor.user.dao.UserDao;
+import ws.gm.features.actor.user.msg.QueryPermissionResponseMsg;
+import ws.gm.features.actor.user.msg.QueryUsersResponseMsg;
+import ws.gm.features.actor.user.msg.UserLoginResponseMsg;
+import ws.gm.features.actor.user.msg.UserRegisterResponsetMsg;
 import ws.gm.features.actor.user.pojo.Permission;
 import ws.gm.features.actor.user.pojo.User;
 import ws.gm.features.session.SessionManager;
 import ws.gm.system.httpServer.inf.AbstractHttpMessageCtrl;
 import ws.gm.system.httpServer.msg.HttpResponseMsg;
-import ws.gm.features.actor.user.msg.QueryPermissionResponseMsg;
-import ws.gm.features.actor.user.msg.QueryUsersResponseMsg;
-import ws.gm.features.actor.user.msg.UserLoginResponseMsg;
-import ws.gm.features.actor.user.msg.UserRegisterResponsetMsg;
 import ws.gm.system.httpServer.utils.ResponseUtils;
-import ws.protos.errorCode.ErrorCodeProtos.ErrorCodeEnum;
+import ws.protos.EnumsProtos;
 import ws.relationship.base.MagicWords_Mongodb;
 import ws.relationship.exception.BusinessLogicMismatchConditionException;
 import ws.relationship.exception.CmMessageIllegalArgumentException;
@@ -67,7 +67,7 @@ public class _UserCtrl extends AbstractHttpMessageCtrl<User> implements UserCtrl
         User dbUser = userDao.query(account.trim());
         if (dbUser != null) {
             String msg = String.format("account exist account=%s", account);
-            throw new BusinessLogicMismatchConditionException(msg, ErrorCodeEnum.SECURITY_CODE_CHECK_FAIL);
+            throw new BusinessLogicMismatchConditionException(msg, EnumsProtos.ErrorCodeEnum.SECURITY_CODE_CHECK_FAIL);
         }
         User user = new User(ObjectId.get().toString());
         user.setPassword(password.trim());
@@ -97,11 +97,11 @@ public class _UserCtrl extends AbstractHttpMessageCtrl<User> implements UserCtrl
         User user = userDao.query(account);
         if (user == null) {
             String msg = String.format("can not find this account");
-            throw new BusinessLogicMismatchConditionException(msg, ErrorCodeEnum.SECURITY_CODE_CHECK_FAIL);
+            throw new BusinessLogicMismatchConditionException(msg, EnumsProtos.ErrorCodeEnum.SECURITY_CODE_CHECK_FAIL);
         }
         if (!user.getPassword().equals(password.trim())) {
             String msg = String.format("wrong password");
-            throw new BusinessLogicMismatchConditionException(msg, ErrorCodeEnum.SECURITY_CODE_CHECK_FAIL);
+            throw new BusinessLogicMismatchConditionException(msg, EnumsProtos.ErrorCodeEnum.SECURITY_CODE_CHECK_FAIL);
         }
         // TODO 下面数字定魔鬼数字
         String sessionId = SESSION_MANAGER.newSessionId();

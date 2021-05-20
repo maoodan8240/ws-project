@@ -5,7 +5,7 @@ import ws.relationship.base.resultCode.ResultCodeEnum;
 import ws.relationship.exception.PlayerPojosGetterException;
 
 /**
- * Created by zhangweiwei on 17-6-13.
+ * Created by lee on 17-6-13.
  */
 public abstract class In_DbResponse extends AbstractInnerMsg {
     private static final long serialVersionUID = 8999006897263903698L;

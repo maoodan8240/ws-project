@@ -7,7 +7,7 @@ import ws.relationship.base.msg.chat.AddChatMsg;
 import ws.relationship.chatServer.GroupChatMsg;
 
 /**
- * Created by zhangweiwei on 17-5-12.
+ * Created by lee on 17-5-12.
  */
 public class BroadcastSystemMsgUtils {
 

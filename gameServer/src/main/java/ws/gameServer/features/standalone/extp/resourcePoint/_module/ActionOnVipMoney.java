@@ -2,8 +2,6 @@ package ws.gameServer.features.standalone.extp.resourcePoint._module;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import ws.gameServer.features.standalone.extp.dataCenter.enums.PrivateNotifyTypeEnum;
-import ws.gameServer.features.standalone.extp.dataCenter.msg.Pr_NotifyMsg;
 import ws.gameServer.features.standalone.extp.resourcePoint.ctrl.ResourcePointCtrl;
 import ws.protos.EnumsProtos.ResourceTypeEnum;
 import ws.relationship.base.OpResult;
@@ -57,8 +55,8 @@ public class ActionOnVipMoney implements ActionStateful {
     // ======================== 数据采集 start start start >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
     private void statisticsDaliyConsumes(long value, ResourcePointCtrl ctrl) {
-        Pr_NotifyMsg notifyMsg2 = new Pr_NotifyMsg(PrivateNotifyTypeEnum.ResourcePoint_DaliyConsumes, ResourceTypeEnum.RES_VIPMONEY_VALUE, value);
-        ctrl.sendPrivateMsg(notifyMsg2);
+//        Pr_NotifyMsg notifyMsg2 = new Pr_NotifyMsg(PrivateNotifyTypeEnum.ResourcePoint_DaliyConsumes, ResourceTypeEnum.RES_VIPMONEY_VALUE, value);
+//        ctrl.sendPrivateMsg(notifyMsg2);
     }
 
     // ======================== 数据采集 end end end <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<

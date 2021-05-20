@@ -7,7 +7,7 @@ import ws.protos.ChatProtos.Sm_Chat;
 import java.util.Date;
 
 /**
- * Created by zhangweiwei on 17-3-23.
+ * Created by lee on 17-3-23.
  */
 public class PrintCmSm {
 

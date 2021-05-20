@@ -3,7 +3,7 @@ package ws.chatServer.features.actor.chat;
 import java.io.Serializable;
 
 /**
- * Created by zhangweiwei on 17-5-4.
+ * Created by lee on 17-5-4.
  */
 public class ChatServerPlayer implements Serializable {
     private static final long serialVersionUID = -733925659197112533L;

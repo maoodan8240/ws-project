@@ -7,7 +7,7 @@ import ws.protos.MailProtos.Sm_Mail.Action;
 import ws.protos.MessageHandlerProtos.Response;
 
 /**
- * Created by zhangweiwei on 17-4-6.
+ * Created by lee on 17-4-6.
  */
 public class Module_Sm_Mail {
 

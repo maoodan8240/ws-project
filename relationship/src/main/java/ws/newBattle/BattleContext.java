@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by zhangweiwei on 16-12-22.
+ * Created by lee on 16-12-22.
  */
 public class BattleContext {
     private NewBattleWrap battle;

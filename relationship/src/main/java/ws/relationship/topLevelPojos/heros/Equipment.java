@@ -6,7 +6,7 @@ import ws.relationship.base.WsCloneable;
 import java.io.Serializable;
 
 /**
- * Created by zhangweiwei on 17-3-10.
+ * Created by lee on 17-3-10.
  */
 public class Equipment implements Serializable, WsCloneable<Equipment> {
     private static final long serialVersionUID = -8816764932821233496L;

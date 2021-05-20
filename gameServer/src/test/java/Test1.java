@@ -1,5 +1,9 @@
+import org.junit.Test;
+import ws.gameServer.features.standalone.extp.utils.UpgradeLevel;
+import ws.relationship.topLevelPojos.common.LevelUpObj;
+
 /**
- * Created by zhangweiwei on 17-6-8.
+ * Created by lee on 17-6-8.
  */
 public class Test1 {
 
@@ -18,11 +22,6 @@ public class Test1 {
         }
     }
 
-    public static void main(String[] args) {
-        Sut ss = null;
-        test(ss);
-        System.out.println(ss);
-    }
 
     private static void test(Sut sut) {
         Sut s = new Sut("lee", 11);
@@ -30,4 +29,19 @@ public class Test1 {
         System.out.println("test:" + sut);
 
     }
+
+    @Test
+    public void name() {
+        LevelUpObj obj1 = new LevelUpObj();
+        UpgradeLevel.levelUp(obj1, 1000, 100, new UpgradeLevel.NextLevelNeedExp() {
+            @Override
+            public int getExp(int oldLevel) {
+                return 100;
+            }
+        });
+        System.out.println(obj1.getLevel());
+        System.out.println(obj1.getOvfExp());
+    }
+
+   
 }

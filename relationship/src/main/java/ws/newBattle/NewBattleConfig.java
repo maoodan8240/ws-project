@@ -4,7 +4,7 @@ package ws.newBattle;
  * 剩余血量大于50%
  * 7回合
  * 死亡人数不超过3
- * Created by zhangweiwei on 16-8-24.
+ * Created by lee on 16-8-24.
  */
 public class NewBattleConfig {
     private int runRound;// 总共进行几回合

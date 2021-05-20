@@ -12,8 +12,6 @@ import ws.gameServer.features.standalone.extp.dataCenter.msg.NotifyObj;
 import ws.gameServer.features.standalone.extp.dataCenter.msg.Pr_NotifyMsg;
 import ws.gameServer.features.standalone.extp.dataCenter.msg.Pr_UpdateRegNotifyMsg;
 import ws.gameServer.features.standalone.extp.dataCenter.stageDaliy.utils.PeriodicDataUtils;
-import ws.gameServer.features.standalone.extp.heros.HerosExtp;
-import ws.gameServer.features.standalone.extp.heros.ctrl.HerosCtrl;
 import ws.gameServer.features.standalone.extp.itemBag.ItemBagExtp;
 import ws.gameServer.features.standalone.extp.itemBag.ctrl.ItemBagCtrl;
 import ws.gameServer.features.standalone.extp.itemIo.ItemIoExtp;
@@ -26,25 +24,18 @@ import ws.relationship.exception.BusinessLogicMismatchConditionException;
 import ws.relationship.topLevelPojos.dataCenter.stageDaliyData.Data;
 import ws.relationship.topLevelPojos.dataCenter.stageDaliyData.StageDaliyData;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class _StageDaliyDataCtrl extends AbstractPlayerExteControler<StageDaliyData> implements StageDaliyDataCtrl {
     private static final Logger LOGGER = LoggerFactory.getLogger(_StageDaliyDataCtrl.class);
     private ItemIoExtp itemIoExtp;
     private ItemIoCtrl itemIoCtrl;
-    private HerosCtrl herosCtrl;
     private ItemBagCtrl itemBagCtrl;
 
     @Override
     public void _initReference() throws Exception {
         itemIoExtp = getPlayerCtrl().getExtension(ItemIoExtp.class);
         itemIoCtrl = itemIoExtp.getControlerForQuery();
-        herosCtrl = getPlayerCtrl().getExtension(HerosExtp.class).getControlerForQuery();
         itemBagCtrl = getPlayerCtrl().getExtension(ItemBagExtp.class).getControlerForQuery();
     }
 

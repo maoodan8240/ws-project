@@ -12,7 +12,7 @@ import ws.relationship.enums.SimpleIdTypeEnum;
 import ws.relationship.topLevelPojos.simpleId.SimpleId;
 
 /**
- * Created by zhangweiwei on 17-4-5.
+ * Created by lee on 17-4-5.
  */
 public class Test2 {
     public static void main(String[] args) throws Exception {

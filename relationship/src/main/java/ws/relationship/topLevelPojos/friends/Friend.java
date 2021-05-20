@@ -3,7 +3,7 @@ package ws.relationship.topLevelPojos.friends;
 import java.io.Serializable;
 
 /**
- * Created by zhangweiwei on 17-5-12.
+ * Created by lee on 17-5-12.
  */
 public class Friend implements Serializable {
     private static final long serialVersionUID = -5842406078184734060L;

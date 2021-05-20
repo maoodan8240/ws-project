@@ -16,7 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by zhangweiwei on 17-5-17.
+ * Created by lee on 17-5-17.
  */
 public class NewBattleCreater {
     private static final Logger LOGGER = LoggerFactory.getLogger(NewBattleCreater.class);

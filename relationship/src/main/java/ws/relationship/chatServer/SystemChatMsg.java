@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by zhangweiwei on 17-5-5.
+ * Created by lee on 17-5-5.
  */
 public class SystemChatMsg implements Serializable {
     private static final long serialVersionUID = 381717064083491199L;

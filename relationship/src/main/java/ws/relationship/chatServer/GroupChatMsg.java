@@ -3,7 +3,7 @@ package ws.relationship.chatServer;
 import ws.protos.EnumsProtos.ChatTypeEnum;
 
 /**
- * Created by zhangweiwei on 17-5-5.
+ * Created by lee on 17-5-5.
  */
 public class GroupChatMsg extends ChatMsg {
     private static final long serialVersionUID = 381717064083491199L;

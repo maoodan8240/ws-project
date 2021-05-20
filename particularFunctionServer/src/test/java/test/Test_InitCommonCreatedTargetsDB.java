@@ -7,7 +7,7 @@ import ws.relationship.topLevelPojos.mailCenter.MailsCenter;
 import ws.relationship.utils.InitCommonCreatedTargetsDB;
 
 /**
- * Created by zhangweiwei on 17-5-23.
+ * Created by lee on 17-5-23.
  */
 public class Test_InitCommonCreatedTargetsDB {
 

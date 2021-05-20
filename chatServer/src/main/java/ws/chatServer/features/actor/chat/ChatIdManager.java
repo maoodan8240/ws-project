@@ -1,7 +1,7 @@
 package ws.chatServer.features.actor.chat;
 
 /**
- * Created by zhangweiwei on 17-5-4.
+ * Created by lee on 17-5-4.
  */
 public class ChatIdManager {
     private static long CHAT_ID = System.currentTimeMillis();

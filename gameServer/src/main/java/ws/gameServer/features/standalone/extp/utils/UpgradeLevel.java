@@ -3,7 +3,7 @@ package ws.gameServer.features.standalone.extp.utils;
 import ws.relationship.topLevelPojos.common.LevelUpObj;
 
 /**
- * Created by zhangweiwei on 16-10-10.
+ * Created by lee on 16-10-10.
  */
 public class UpgradeLevel {
     /**
@@ -17,8 +17,7 @@ public class UpgradeLevel {
     /**
      * * 调用前，确认oldLevel不大于最大等级
      * 根据提供的经验值升级升级(溢出的经验值直接忽略)
-     *
-     * @param levelUpObj
+     *  @param levelUpObj
      * @param expOffered
      * @param curMaxLevel
      * @param nextLevelNeedExp

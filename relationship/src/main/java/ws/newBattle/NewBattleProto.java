@@ -8,7 +8,7 @@ import ws.protos.BattleProtos.Sm_Battle_ScriptWave;
 import ws.protos.EnumsProtos.BattleResultTypeEnum;
 
 /**
- * Created by zhangweiwei on 17-5-15.
+ * Created by lee on 17-5-15.
  */
 public class NewBattleProto {
     private Sm_Battle_BackData.Builder backData = NewBattleProtosUtils.create_Sm_Battle_BackData();

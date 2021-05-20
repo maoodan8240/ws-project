@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by zhangweiwei on 17-5-5.
+ * Created by lee on 17-5-5.
  */
 public class NeedToSendMsgs {
     public static class Request extends ChatServerInnerMsg {

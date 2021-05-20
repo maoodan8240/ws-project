@@ -1,7 +1,7 @@
 package ws.relationship.base.msg.chat;
 
 /**
- * Created by zhangweiwei on 17-5-5.
+ * Created by lee on 17-5-5.
  */
 public class AddTeamMember {
     public static class Request extends ChatServerInnerMsg {

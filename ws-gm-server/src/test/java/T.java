@@ -11,7 +11,7 @@ import ws.relationship.daos.centerPlayer.CenterPlayerDao;
 import ws.relationship.topLevelPojos.centerPlayer.CenterPlayer;
 
 /**
- * Created by zhangweiwei on 17-7-12.
+ * Created by lee on 17-7-12.
  */
 public class T {
     public static void main(String[] args) throws Exception {

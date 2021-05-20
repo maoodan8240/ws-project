@@ -5,7 +5,7 @@ import ws.protos.EnumsProtos.ChatTypeEnum;
 import java.io.Serializable;
 
 /**
- * Created by zhangweiwei on 17-5-5.
+ * Created by lee on 17-5-5.
  */
 public abstract class ChatMsg implements Serializable {
     private static final long serialVersionUID = 381717064083491199L;

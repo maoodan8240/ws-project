@@ -13,7 +13,7 @@ import ws.relationship.daos.sdk.realm.OuterToInnerRealmListDao;
 import ws.relationship.topLevelPojos.sdk.realm.OuterToInnerRealmList;
 
 /**
- * Created by zhangweiwei on 17-5-5.
+ * Created by lee on 17-5-5.
  */
 public class InitRealmData {
 

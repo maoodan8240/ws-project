@@ -4,7 +4,7 @@ import ws.common.utils.message.implement.AbstractInnerMsg;
 import ws.relationship.base.resultCode.ResultCodeEnum;
 
 /**
- * Created by zhangweiwei on 17-5-24.
+ * Created by lee on 17-5-24.
  */
 public class In_ReGetCenterPlayer {
 

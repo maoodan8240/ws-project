@@ -20,7 +20,7 @@ import ws.relationship.utils.RandomUtils;
 import ws.relationship.utils.RelationshipCommonUtils;
 
 /**
- * Created by zhangweiwei on 16-12-21.
+ * Created by lee on 16-12-21.
  */
 public class NewBattleSkillManager implements EventListener {
     private static final Logger LOGGER = LoggerFactory.getLogger(NewBattleSkillManager.class);

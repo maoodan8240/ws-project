@@ -1,7 +1,7 @@
 package ws.newBattle;
 
 /**
- * Created by zhangweiwei on 17-5-17.
+ * Created by lee on 17-5-17.
  */
 public class NewBattleConstants {
     /**

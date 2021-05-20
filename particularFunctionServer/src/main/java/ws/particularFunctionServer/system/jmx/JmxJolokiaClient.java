@@ -17,7 +17,7 @@ import javax.management.MalformedObjectNameException;
 import java.util.Date;
 
 /**
- * Created by zhangweiwei on 17-4-24.
+ * Created by lee on 17-4-24.
  */
 public class JmxJolokiaClient {
     private static final Logger LOGGER = LoggerFactory.getLogger(JmxJolokiaClient.class);

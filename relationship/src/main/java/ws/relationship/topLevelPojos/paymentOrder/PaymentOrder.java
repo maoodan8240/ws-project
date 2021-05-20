@@ -10,7 +10,7 @@ import ws.protos.EnumsProtos.PlatformTypeEnum;
 import java.util.Date;
 
 /**
- * Created by zhangweiwei on 17-5-8.
+ * Created by lee on 17-5-8.
  */
 public class PaymentOrder implements TopLevelPojo {
     private static final long serialVersionUID = -360989839665811735L;

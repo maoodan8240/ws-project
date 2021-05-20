@@ -23,7 +23,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * Created by zhangweiwei on 17-5-4.
+ * Created by lee on 17-5-4.
  */
 public class InnerRealmChatActor extends WsActor {
     private static final Logger LOGGER = LoggerFactory.getLogger(InnerRealmChatActor.class);

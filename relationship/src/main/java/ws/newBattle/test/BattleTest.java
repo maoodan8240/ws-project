@@ -23,12 +23,12 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by zhangweiwei on 17-1-4.
+ * Created by lee on 17-1-4.
  */
 public class BattleTest {
 
     public static void main(String[] args) throws Exception {
-        PlanningTableData planningTableData = new _PlanningTableData("/home/zhangweiwei/Work/y9-git/gameServer/src/main/resources/data/tab/");
+        PlanningTableData planningTableData = new _PlanningTableData("/home/lee/Work/y9-git/gameServer/src/main/resources/data/tab/");
         planningTableData.loadAllTablesData();
         RootTc.init(planningTableData, new RefreshableTableContainerListener() {
             @Override

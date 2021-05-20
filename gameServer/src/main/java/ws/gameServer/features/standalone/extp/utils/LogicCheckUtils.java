@@ -5,7 +5,7 @@ import ws.common.utils.message.interfaces.InnerMsg;
 import ws.common.utils.message.interfaces.ResultCode;
 import ws.gameServer.features.standalone.extp.itemBag.utils.ItemBagUtils;
 import ws.gameServer.features.standalone.extp.itemIo.ctrl.ItemIoCtrl;
-import ws.protos.errorCode.ErrorCodeProtos.ErrorCodeEnum;
+import ws.protos.EnumsProtos;
 import ws.relationship.base.IdAndCount;
 import ws.relationship.base.IdMaptoCount;
 import ws.relationship.base.resultCode.ResultCodeEnum;
@@ -14,7 +14,7 @@ import ws.relationship.exception.BusinessLogicMismatchConditionException;
 import ws.relationship.table.RootTc;
 
 /**
- * Created by zhangweiwei on 16-9-20.
+ * Created by lee on 16-9-20.
  */
 public class LogicCheckUtils {
 
@@ -156,7 +156,7 @@ public class LogicCheckUtils {
      */
     public static void checkResponse(InnerMsg response) {
         if (response.getResultCode() != null && response.getResultCode().getCode() != ResultCodeEnum.SUCCESS.getCode()) {
-            throw new BusinessLogicMismatchConditionException(response.getResultCode().getMessage(), ErrorCodeEnum.valueOf(response.getResultCode().getCode()));
+            throw new BusinessLogicMismatchConditionException(response.getResultCode().getMessage(), EnumsProtos.ErrorCodeEnum.valueOf(response.getResultCode().getCode()));
         }
     }
 

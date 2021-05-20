@@ -1,20 +1,7 @@
 package ws.gameServer.features.standalone.extp.itemIo._module.itemContainer;
 
-import ws.gameServer.features.standalone.extp.itemIo._module.itemContainer.heros.AddToHeros;
-import ws.gameServer.features.standalone.extp.itemIo._module.itemContainer.heros.CanAddToHeros;
-import ws.gameServer.features.standalone.extp.itemIo._module.itemContainer.heros.CanRemoveFromHeros;
-import ws.gameServer.features.standalone.extp.itemIo._module.itemContainer.heros.RefreshHeros;
-import ws.gameServer.features.standalone.extp.itemIo._module.itemContainer.heros.RemoveFromHeros;
-import ws.gameServer.features.standalone.extp.itemIo._module.itemContainer.itemBag.AddToItemBag;
-import ws.gameServer.features.standalone.extp.itemIo._module.itemContainer.itemBag.CanAddToItemBag;
-import ws.gameServer.features.standalone.extp.itemIo._module.itemContainer.itemBag.CanRemoveFromItemBag;
-import ws.gameServer.features.standalone.extp.itemIo._module.itemContainer.itemBag.RefreshItemBag;
-import ws.gameServer.features.standalone.extp.itemIo._module.itemContainer.itemBag.RemoveFromItemBag;
-import ws.gameServer.features.standalone.extp.itemIo._module.itemContainer.resourcePoint.AddToResourcePoint;
-import ws.gameServer.features.standalone.extp.itemIo._module.itemContainer.resourcePoint.CanAddToResourcePoint;
-import ws.gameServer.features.standalone.extp.itemIo._module.itemContainer.resourcePoint.CanRemoveFromResourcePoint;
-import ws.gameServer.features.standalone.extp.itemIo._module.itemContainer.resourcePoint.RefreshResourcePoint;
-import ws.gameServer.features.standalone.extp.itemIo._module.itemContainer.resourcePoint.RemoveFromResourcePoint;
+import ws.gameServer.features.standalone.extp.itemIo._module.itemContainer.itemBag.*;
+import ws.gameServer.features.standalone.extp.itemIo._module.itemContainer.resourcePoint.*;
 import ws.gameServer.features.standalone.extp.itemIo.exception.ParseItemContainerTypeFailedException;
 import ws.relationship.enums.item.IdItemTypeEnum;
 
@@ -26,14 +13,7 @@ import java.util.List;
  * Item容器类型枚举
  */
 public enum ItemContainerTypeEnum {
-    /**
-     * 武将
-     */
-    Heros(//
-            new AddToHeros(), new CanAddToHeros(), new CanRemoveFromHeros(), new RefreshHeros(), new RemoveFromHeros() //
-            , IdItemTypeEnum.HERO
-            //
-    ),
+   
     /**
      * 背包
      */
@@ -49,7 +29,8 @@ public enum ItemContainerTypeEnum {
             new AddToResourcePoint(), new CanAddToResourcePoint(), new CanRemoveFromResourcePoint(), new RefreshResourcePoint(), new RemoveFromResourcePoint()//
             , IdItemTypeEnum.RESOURCE
             //
-    ),;
+    ),
+    ;
     private AddOrReduceAction add;
     private CanAddOrCanReduceAction canAdd;
     private CanAddOrCanReduceAction canRemove;

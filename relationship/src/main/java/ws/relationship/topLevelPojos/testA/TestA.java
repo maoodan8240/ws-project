@@ -3,7 +3,7 @@ package ws.relationship.topLevelPojos.testA;
 import ws.relationship.topLevelPojos.PlayerTopLevelPojo;
 
 /**
- * Created by zhangweiwei on 16-9-18.
+ * Created by lee on 16-9-18.
  */
 public class TestA extends PlayerTopLevelPojo {
     private static final long serialVersionUID = -2094739928977920750L;

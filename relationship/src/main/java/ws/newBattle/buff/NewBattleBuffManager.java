@@ -16,7 +16,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 /**
- * Created by zhangweiwei on 16-12-21.
+ * Created by lee on 16-12-21.
  */
 public class NewBattleBuffManager implements EventListener {
     private static final Logger LOGGER = LoggerFactory.getLogger(NewBattleBuffManager.class);

@@ -10,7 +10,7 @@ import ws.relationship.logServer.base.WsLog;
 import java.util.List;
 
 /**
- * Created by zhangweiwei on 17-5-12.
+ * Created by lee on 17-5-12.
  */
 public class LogServerUtils {
 

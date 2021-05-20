@@ -3,7 +3,7 @@ package ws.relationship.base;
 import akka.actor.ActorContext;
 
 /**
- * Created by zhangweiwei on 17-6-28.
+ * Created by lee on 17-6-28.
  */
 public class GlobalClusterContext {
     private static ActorContext context;

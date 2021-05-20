@@ -4,7 +4,7 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 
 /**
- * Created by zhangweiwei on 17-6-7.
+ * Created by lee on 17-6-7.
  */
 public class MutilLanguageTest {
 

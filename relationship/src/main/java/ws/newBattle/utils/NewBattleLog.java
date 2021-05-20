@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import java.util.Arrays;
 
 /**
- * Created by zhangweiwei on 17-6-2.
+ * Created by lee on 17-6-2.
  */
 public class NewBattleLog {
     private static final Logger LOGGER = LoggerFactory.getLogger(NewBattleLog.class);

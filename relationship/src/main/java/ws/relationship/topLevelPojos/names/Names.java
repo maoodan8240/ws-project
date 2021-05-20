@@ -4,7 +4,7 @@ import com.alibaba.fastjson.annotation.JSONField;
 import ws.common.mongoDB.interfaces.TopLevelPojo;
 
 /**
- * Created by zhangweiwei on 17-6-7.
+ * Created by lee on 17-6-7.
  */
 public class Names implements TopLevelPojo {
     private static final long serialVersionUID = 7766194719022696280L;

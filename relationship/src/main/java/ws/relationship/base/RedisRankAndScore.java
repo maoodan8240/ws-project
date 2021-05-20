@@ -1,7 +1,7 @@
 package ws.relationship.base;
 
 /**
- * Created by zhangweiwei on 17-4-14.
+ * Created by lee on 17-4-14.
  */
 public class RedisRankAndScore {
     private String member;  // 排名的成员

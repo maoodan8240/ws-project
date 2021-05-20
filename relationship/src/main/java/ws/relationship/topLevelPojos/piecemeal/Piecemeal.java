@@ -3,7 +3,7 @@ package ws.relationship.topLevelPojos.piecemeal;
 import ws.relationship.topLevelPojos.PlayerTopLevelPojo;
 
 /**
- * Created by zhangweiwei on 17-4-12.
+ * Created by lee on 17-4-12.
  */
 public class Piecemeal extends PlayerTopLevelPojo {
     private static final long serialVersionUID = -692998520146291101L;

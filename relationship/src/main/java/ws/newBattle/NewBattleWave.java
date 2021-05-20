@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by zhangweiwei on 16-8-24.
+ * Created by lee on 16-8-24.
  */
 public class NewBattleWave {
     protected int curWaveNum; // 当前第几波

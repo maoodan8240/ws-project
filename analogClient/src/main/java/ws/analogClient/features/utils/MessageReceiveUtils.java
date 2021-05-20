@@ -7,7 +7,7 @@ import ws.protos.CodesProtos.ProtoCodes.Code;
 import ws.protos.MessageHandlerProtos.Response;
 
 /**
- * Created by zhangweiwei on 17-4-6.
+ * Created by lee on 17-4-6.
  */
 public class MessageReceiveUtils {
     private static final Logger LOGGER = LoggerFactory.getLogger(MessageReceiveUtils.class);

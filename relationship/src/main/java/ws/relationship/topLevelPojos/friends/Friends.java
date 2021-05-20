@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by zhangweiwei on 17-5-12.
+ * Created by lee on 17-5-12.
  */
 public class Friends extends PlayerTopLevelPojo {
     private static final long serialVersionUID = 2835850752574205680L;

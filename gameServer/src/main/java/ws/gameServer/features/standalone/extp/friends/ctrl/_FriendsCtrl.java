@@ -20,16 +20,12 @@ import ws.gameServer.features.standalone.extp.itemIo.ctrl.ItemIoCtrl;
 import ws.gameServer.features.standalone.extp.utils.LogicCheckUtils;
 import ws.gameServer.features.standalone.extp.utils.SenderFunc;
 import ws.protos.CommonProtos.Sm_Common_SimplePlayer_Base;
+import ws.protos.EnumsProtos;
 import ws.protos.EnumsProtos.CommonRankTypeEnum;
 import ws.protos.EnumsProtos.ResourceTypeEnum;
 import ws.protos.FriendProtos.Sm_Friend;
 import ws.protos.FriendProtos.Sm_Friend.Action;
-import ws.protos.errorCode.ErrorCodeProtos.ErrorCodeEnum;
-import ws.relationship.base.IdAndCount;
-import ws.relationship.base.IdMaptoCount;
-import ws.relationship.base.MagicNumbers;
-import ws.relationship.base.MagicWords_Redis;
-import ws.relationship.base.RedisRankAndScore;
+import ws.relationship.base.*;
 import ws.relationship.base.cluster.ActorSystemPath;
 import ws.relationship.base.msg.CheckPlayerOnlineMsgRequest;
 import ws.relationship.base.resultCode.ResultCodeEnum;
@@ -40,20 +36,10 @@ import ws.relationship.table.AllServerConfig;
 import ws.relationship.topLevelPojos.friends.Friend;
 import ws.relationship.topLevelPojos.friends.Friends;
 import ws.relationship.topLevelPojos.simplePlayer.SimplePlayer;
-import ws.relationship.utils.ActorMsgSynchronizedExecutor;
-import ws.relationship.utils.ClusterMessageSender;
-import ws.relationship.utils.ProtoUtils;
-import ws.relationship.utils.RedisRankUtils;
-import ws.relationship.utils.RelationshipCommonUtils;
-import ws.relationship.utils.SimplePojoUtils;
+import ws.relationship.utils.*;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
-import java.util.Set;
 
 public class _FriendsCtrl extends AbstractPlayerExteControler<Friends> implements FriendsCtrl {
     private static final Logger LOGGER = LoggerFactory.getLogger(_FriendsCtrl.class);
@@ -236,7 +222,7 @@ public class _FriendsCtrl extends AbstractPlayerExteControler<Friends> implement
         LogicCheckUtils.validateParam(String.class, targetPlayerId);
         if (!FriendsCtrlUtils.containsFriend(target, targetPlayerId)) { // 好友列表中没有该playerId，无法赠送体力
             String msg = String.format("好友列表中没有该toPlayerId=%s，无法赠送体力！", targetPlayerId);
-            throw new BusinessLogicMismatchConditionException(msg, ErrorCodeEnum.FRIENDS_WITHOUT_THE_FRIEND);
+            throw new BusinessLogicMismatchConditionException(msg, EnumsProtos.ErrorCodeEnum.FRIENDS_WITHOUT_THE_FRIEND);
         }
         Friend friend = _giveEnergy(targetPlayerId);
         SenderFunc.sendInner(this, Sm_Friend.class, Sm_Friend.Builder.class, Action.RESP_GIVE, (b, br) -> {
@@ -272,7 +258,7 @@ public class _FriendsCtrl extends AbstractPlayerExteControler<Friends> implement
         LogicCheckUtils.validateParam(String.class, targetPlayerId);
         if (!FriendsCtrlUtils.containsFriend(target, targetPlayerId)) { // 好友列表中没有该playerId，无法领取体力
             String msg = String.format("好友列表中没有该playerId=%s，无法领取体力！", targetPlayerId);
-            throw new BusinessLogicMismatchConditionException(msg, ErrorCodeEnum.FRIENDS_WITHOUT_THE_FRIEND);
+            throw new BusinessLogicMismatchConditionException(msg, EnumsProtos.ErrorCodeEnum.FRIENDS_WITHOUT_THE_FRIEND);
         }
         Friend friend = FriendsCtrlUtils.getFriend(target, targetPlayerId);
         if (!FriendsCtrlUtils.canGetEnergy(friend)) {
@@ -354,7 +340,7 @@ public class _FriendsCtrl extends AbstractPlayerExteControler<Friends> implement
         SenderFunc.sendInner(this, Sm_Friend.class, Sm_Friend.Builder.class, Action.RESP_SEARCH, (b, br) -> {
             if (simplePlayer == null) {
                 br.setResult(false);
-                br.setErrorCode(ErrorCodeEnum.FRIENDS_NOT_EXIST_SEARCH_PLAYER);
+                br.setErrorCode(EnumsProtos.ErrorCodeEnum.FRIENDS_NOT_EXIST_SEARCH_PLAYER);
             } else {
                 b.addRecommendPlayers(ProtoUtils.create_Sm_Common_SimplePlayer_Base(simplePlayer));
             }

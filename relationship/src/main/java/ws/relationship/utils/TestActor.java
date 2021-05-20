@@ -5,7 +5,7 @@ import ws.relationship.base.actor.WsActor;
 import java.io.Serializable;
 
 /**
- * Created by zhangweiwei on 17-4-26.
+ * Created by lee on 17-4-26.
  */
 public class TestActor extends WsActor {
 

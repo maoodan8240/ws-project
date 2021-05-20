@@ -3,7 +3,7 @@ package a;
 import java.util.concurrent.locks.LockSupport;
 
 /**
- * Created by zhangweiwei on 16-10-27.
+ * Created by lee on 16-10-27.
  */
 public class T32 {
 

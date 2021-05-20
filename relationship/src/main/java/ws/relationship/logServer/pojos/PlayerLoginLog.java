@@ -4,7 +4,7 @@ import org.bson.types.ObjectId;
 import ws.relationship.logServer.base.PlayerLog;
 
 /**
- * Created by zhangweiwei on 17-7-11.
+ * Created by lee on 17-7-11.
  */
 public class PlayerLoginLog extends PlayerLog {
     private static final long serialVersionUID = 2282353612799755541L;

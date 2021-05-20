@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by zhangweiwei on 17-6-21.
+ * Created by lee on 17-6-21.
  */
 public class PyActivities extends PlayerTopLevelPojo {
     private static final long serialVersionUID = -2151735830802167139L;

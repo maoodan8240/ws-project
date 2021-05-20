@@ -3,7 +3,7 @@ package ws.relationship.utils;
 import ws.protos.BattleProtos.Sm_Battle_BackData;
 
 /**
- * Created by zhangweiwei on 17-5-24.
+ * Created by lee on 17-5-24.
  */
 public class BattleRecordsUtils {
 

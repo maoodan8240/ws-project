@@ -19,25 +19,15 @@ import ws.gameServer.features.standalone.actor.player.msg.Pr_PlayerVipLvChanged;
 import ws.gameServer.features.standalone.actor.player.utils.PlayerCtrlProtos;
 import ws.gameServer.features.standalone.actor.player.utils.PlayerUtils;
 import ws.gameServer.features.standalone.actor.player.utils.SimplePlayerUtils;
-import ws.gameServer.features.standalone.extp.arena.utils.ArenaCtrlUtils;
-import ws.gameServer.features.standalone.extp.dataCenter.enums.PrivateNotifyTypeEnum;
-import ws.gameServer.features.standalone.extp.dataCenter.msg.Pr_NotifyMsg;
-import ws.gameServer.features.standalone.extp.itemIo.ItemIoExtp;
-import ws.gameServer.features.standalone.extp.itemIo.ctrl.ItemIoCtrl;
-import ws.gameServer.features.standalone.extp.utils.LogicCheckUtils;
 import ws.gameServer.features.standalone.extp.utils.UpgradeLevel;
 import ws.gameServer.features.standalone.utils.LogHandler;
 import ws.gameServer.system.date.dayChanged.DayChanged;
 import ws.gameServer.system.logHandler.LogExcep;
-import ws.protos.BattleProtos.Sm_Battle_BackData;
-import ws.protos.BattleProtos.Sm_TestBattle;
-import ws.protos.BattleProtos.Sm_TestBattle.Action;
 import ws.protos.CodesProtos.ProtoCodes.Code;
-import ws.protos.EnumsProtos.CommonRankTypeEnum;
+import ws.protos.EnumsProtos;
 import ws.protos.EnumsProtos.ResourceTypeEnum;
 import ws.protos.MessageHandlerProtos.Response;
 import ws.protos.PlayerProtos.Sm_Player;
-import ws.protos.errorCode.ErrorCodeProtos.ErrorCodeEnum;
 import ws.relationship.base.IdAndCount;
 import ws.relationship.base.IdMaptoCount;
 import ws.relationship.base.MagicNumbers;
@@ -58,13 +48,8 @@ import ws.relationship.topLevelPojos.simplePlayer.SimplePlayer;
 import ws.relationship.utils.DBUtils;
 import ws.relationship.utils.NameUtils;
 import ws.relationship.utils.ProtoUtils;
-import ws.relationship.utils.RedisRankUtils;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class _PlayerCtrl extends AbstractControler<Player> implements PlayerCtrl {
     private static final Logger LOGGER = LoggerFactory.getLogger(_PlayerCtrl.class);
@@ -126,33 +111,25 @@ public class _PlayerCtrl extends AbstractControler<Player> implements PlayerCtrl
         boolean rs = NameUtils.inertNewName(newName);
         if (!rs) {
             LOGGER.warn("名字已经存在了！newName={} ", newName);
-            br.setErrorCode(ErrorCodeEnum.PLAYER_NAME_ALREADY_USED);
+            br.setErrorCode(EnumsProtos.ErrorCodeEnum.PLAYER_NAME_ALREADY_USED);
             sendResponse(br.build());
             return;
         }
         int freeTs = AllServerConfig.Player_Rename_FreeTimes.getConfig();
         IdMaptoCount refresh = null;
-        ItemIoExtp itemIoExtp = getExtension(ItemIoExtp.class);
-        ItemIoCtrl itemIoCtrl = itemIoExtp.getControlerForQuery();
         int oldTimes = target.getOther().getReNameTs();
         int newTimes = oldTimes + 1;
         if (oldTimes >= freeTs) {
             int consume = AllServerConfig.Player_Rename_Consume.getConfig();
             IdAndCount reduce = new IdAndCount(ResourceTypeEnum.RES_VIPMONEY_VALUE, consume);
-            LogicCheckUtils.canRemove(itemIoCtrl, reduce);
-            refresh = itemIoExtp.getControlerForUpdate(Sm_Player.Action.RESP_RENAME).removeItem(reduce);
         }
         target.getOther().setReNameTs(newTimes);
         target.getBase().setName(newName);
         Sm_Player.Builder b = Sm_Player.newBuilder();
         b.setAction(Sm_Player.Action.RESP_RENAME);
         b.setName(newName);
-        b.setReNameTimes(newTimes);
         br.setSmPlayer(b);
         br.setResult(true);
-        if (refresh != null) {
-            itemIoCtrl.refreshItemAddToResponse(refresh, br);
-        }
         sendResponse(br.build());
         save();
     }
@@ -172,14 +149,14 @@ public class _PlayerCtrl extends AbstractControler<Player> implements PlayerCtrl
 
     @Override
     public void onSign(String newSign) {
-        Response.Builder br = ProtoUtils.create_Response(Code.Sm_Player, Sm_Player.Action.RESP_SIGN);
-        Sm_Player.Builder b = Sm_Player.newBuilder();
-        b.setAction(Sm_Player.Action.RESP_SIGN);
-        b.setSign(newSign);
-        target.getBase().setSign(newSign);
-        br.setSmPlayer(b);
-        br.setResult(true);
-        sendResponse(br.build());
+//        Response.Builder br = ProtoUtils.create_Response(Code.Sm_Player, Sm_Player.Action.RESP_SIGN);
+//        Sm_Player.Builder b = Sm_Player.newBuilder();
+//        b.setAction(Sm_Player.Action.RESP_SIGN);
+//        b.setSign(newSign);
+//        target.getBase().setSign(newSign);
+//        br.setSmPlayer(b);
+//        br.setResult(true);
+//        sendResponse(br.build());
         save();
     }
 
@@ -219,8 +196,6 @@ public class _PlayerCtrl extends AbstractControler<Player> implements PlayerCtrl
         target.getPayment().setVipLevel(levelUpObj.getLevel());
         // 添加资源
         IdAndCount addVipMoney = new IdAndCount(ResourceTypeEnum.RES_VIPMONEY_VALUE, vipMoney);
-        getExtension(ItemIoExtp.class).getControlerForUpdate(callerAction).addItem(addVipMoney);
-        getExtension(ItemIoExtp.class).getControlerForQuery().refreshItem(new IdMaptoCount(addVipMoney));
         int newVipLv = getCurVipLevel();
         sync();
         save();
@@ -458,18 +433,7 @@ public class _PlayerCtrl extends AbstractControler<Player> implements PlayerCtrl
 
     @Override
     public void testBattle() {
-        try {
-            Sm_Battle_BackData backData = ArenaCtrlUtils.runArenaBattle_Robot(this, 1);
-            Response.Builder br = ProtoUtils.create_Response(Code.Sm_TestBattle, Action.RESP_TEST);
-            Sm_TestBattle.Builder b = Sm_TestBattle.newBuilder();
-            b.setAction(Action.RESP_TEST);
-            b.setBackData(backData);
-            br.setResult(true);
-            br.setSmTestBattle(b);
-            sendResponse(br.build());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+       
     }
 
     @Override
@@ -537,8 +501,8 @@ public class _PlayerCtrl extends AbstractControler<Player> implements PlayerCtrl
 
     // 更新玩家最近一次登录时间点
     private void updatePlayerLastLoginRank() {
-        RedisRankUtils.insertRank(System.currentTimeMillis(), getPlayerId(), getOuterRealmId(), CommonRankTypeEnum.RK_PLAYERLOGINTIME);
-        RedisRankUtils.removeFromRankByRange(getOuterRealmId(), CommonRankTypeEnum.RK_PLAYERLOGINTIME, MagicNumbers.PLAYER_LAST_LOGIN_STORE_COUNT, Integer.MAX_VALUE);
+//        RedisRankUtils.insertRank(System.currentTimeMillis(), getPlayerId(), getOuterRealmId(), CommonRankTypeEnum.RK_PLAYERLOGINTIME);
+//        RedisRankUtils.removeFromRankByRange(getOuterRealmId(), CommonRankTypeEnum.RK_PLAYERLOGINTIME, MagicNumbers.PLAYER_LAST_LOGIN_STORE_COUNT, Integer.MAX_VALUE);
     }
 
     // ======================== 针对玩家模块的数据采集 start start start >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -548,8 +512,8 @@ public class _PlayerCtrl extends AbstractControler<Player> implements PlayerCtrl
      * 统计玩家升级
      */
     public void statisticsPlayerLevelUp() {
-        Pr_NotifyMsg notifyMsg1 = new Pr_NotifyMsg(PrivateNotifyTypeEnum.Player_LevelUp, target.getBase().getLevel());
-        sendPrivateMsg(notifyMsg1);
+//        Pr_NotifyMsg notifyMsg1 = new Pr_NotifyMsg(PrivateNotifyTypeEnum.Player_LevelUp, target.getBase().getLevel());
+//        sendPrivateMsg(notifyMsg1);
     }
 
 
@@ -557,11 +521,11 @@ public class _PlayerCtrl extends AbstractControler<Player> implements PlayerCtrl
      * 统计玩家登录
      */
     private void statisticsPlayerLoginDays() {
-        Pr_NotifyMsg notifyMsg1 = new Pr_NotifyMsg(PrivateNotifyTypeEnum.Player_LoginAllDays, target.getOther().getLoginDays());
-        sendPrivateMsg(notifyMsg1);
-
-        Pr_NotifyMsg notifyMsg2 = new Pr_NotifyMsg(PrivateNotifyTypeEnum.Player_LoginOneDay, MagicNumbers.DEFAULT_ONE);
-        sendPrivateMsg(notifyMsg2);
+//        Pr_NotifyMsg notifyMsg1 = new Pr_NotifyMsg(PrivateNotifyTypeEnum.Player_LoginAllDays, target.getOther().getLoginDays());
+//        sendPrivateMsg(notifyMsg1);
+//
+//        Pr_NotifyMsg notifyMsg2 = new Pr_NotifyMsg(PrivateNotifyTypeEnum.Player_LoginOneDay, MagicNumbers.DEFAULT_ONE);
+//        sendPrivateMsg(notifyMsg2);
     }
 
     // ======================== 针对玩家模块的数据采集 end end end <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<

@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.Queue;
 
 /**
- * Created by zhangweiwei on 16-8-23.
+ * Created by lee on 16-8-23.
  */
 public class NewBattleSide {
     private BattleSideEnum curSide;

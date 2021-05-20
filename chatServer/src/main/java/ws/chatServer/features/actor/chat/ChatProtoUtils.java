@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by zhangweiwei on 17-5-5.
+ * Created by lee on 17-5-5.
  */
 public class ChatProtoUtils {
     private static final Logger LOGGER = LoggerFactory.getLogger(ChatProtoUtils.class);

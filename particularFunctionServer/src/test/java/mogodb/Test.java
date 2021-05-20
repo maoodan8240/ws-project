@@ -10,7 +10,7 @@ import ws.relationship.daos.names.NamesDao;
 import ws.relationship.daos.names._NamesDao;
 
 /**
- * Created by zhangweiwei on 17-5-24.
+ * Created by lee on 17-5-24.
  */
 public class Test {
     public static void main(String[] args) throws Exception {

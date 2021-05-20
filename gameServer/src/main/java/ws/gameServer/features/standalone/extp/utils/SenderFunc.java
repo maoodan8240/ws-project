@@ -9,7 +9,7 @@ import ws.relationship.utils.ProtoUtils;
 import java.lang.reflect.Method;
 
 /**
- * Created by zhangweiwei on 16-9-21.
+ * Created by lee on 16-9-21.
  */
 public interface SenderFunc<T extends com.google.protobuf.GeneratedMessage.Builder> {
     /**

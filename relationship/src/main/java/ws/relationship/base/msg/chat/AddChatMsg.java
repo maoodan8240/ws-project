@@ -3,7 +3,7 @@ package ws.relationship.base.msg.chat;
 import ws.relationship.chatServer.ChatMsg;
 
 /**
- * Created by zhangweiwei on 17-5-5.
+ * Created by lee on 17-5-5.
  */
 public class AddChatMsg {
     public static class Request extends ChatServerInnerMsg {

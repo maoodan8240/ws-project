@@ -5,7 +5,7 @@ import ws.protos.EnumsProtos.FightTargetEnum;
 import ws.protos.EnumsProtos.SystemModuleTypeEnum;
 
 /**
- * Created by zhangweiwei on 17-4-27.
+ * Created by lee on 17-4-27.
  */
 public class HeroAttrsRange {
     private SystemModuleTypeEnum moduleType;    // 限制的玩法

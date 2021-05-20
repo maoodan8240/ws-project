@@ -1,7 +1,7 @@
 package ws.newBattle.skill;
 
 /**
- * Created by zhangweiwei on 17-1-4.
+ * Created by lee on 17-1-4.
  */
 public class SkillAndLevel {
     private int id;

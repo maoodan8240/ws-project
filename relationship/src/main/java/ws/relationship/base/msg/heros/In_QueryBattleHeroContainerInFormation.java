@@ -5,7 +5,7 @@ import ws.newBattle.NewBattleHeroContainer;
 import ws.protos.EnumsProtos.FormationTypeEnum;
 
 /**
- * Created by zhangweiwei on 17-5-24.
+ * Created by lee on 17-5-24.
  */
 public class In_QueryBattleHeroContainerInFormation {
 

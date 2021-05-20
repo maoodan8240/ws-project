@@ -14,7 +14,7 @@ public class _NamesDao extends AbstractBaseDao<Names> implements NamesDao {
     @Override
     public boolean inertNewName(String newName) {
         Document find = new Document("name", newName);
-        Document update = new Document(UpdateOperators.SET_ON_INSERT.getOperators(), new Document("name", newName));
+        Document update = new Document(UpdateOperators.ADDTOSET.getOperators(), new Document("name", newName));
         Document rs = this.getMongoCollection().findOneAndUpdate(find, update, new FindOneAndUpdateOptions().upsert(true));
         return rs == null; // 返回null表示插入成功
     }

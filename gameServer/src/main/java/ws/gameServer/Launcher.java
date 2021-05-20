@@ -29,13 +29,9 @@ import ws.relationship.table.RowsClassHolder;
 import ws.relationship.table.tableRows.Table_Exp_Row;
 import ws.relationship.utils.InitCommonCreatedTargetsDB;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
-public class    Launcher {
+public class Launcher {
     private static final Logger logger = LoggerFactory.getLogger(Launcher.class);
 
     public static void main(String[] args) {
@@ -87,7 +83,7 @@ public class    Launcher {
         String dbName = AppConfig.getString(AppConfig.Key.WS_Common_Config_mongodb_dbName);
         int connectionsPerHost = AppConfig.getInt(AppConfig.Key.WS_Common_Config_mongodb_connectionsPerHost);
         int minConnectionsPerHost = AppConfig.getInt(AppConfig.Key.WS_Common_Config_mongodb_minConnectionsPerHost);
-        MongoConfig config = new MongoConfig(host, port, userName, password, dbName, minConnectionsPerHost, connectionsPerHost);
+        MongoConfig config = new MongoConfig(host, port, userName, password, dbName, minConnectionsPerHost);
         GlobalInjector.getInstance(MongoDBClient.class).init(config);
     }
 

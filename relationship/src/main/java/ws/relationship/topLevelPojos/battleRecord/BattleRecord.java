@@ -4,7 +4,7 @@ import com.alibaba.fastjson.annotation.JSONField;
 import ws.common.mongoDB.interfaces.TopLevelPojo;
 
 /**
- * Created by zhangweiwei on 17-5-25.
+ * Created by lee on 17-5-25.
  */
 public class BattleRecord implements TopLevelPojo {
     private static final long serialVersionUID = 4275644207326399135L;

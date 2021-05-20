@@ -3,7 +3,7 @@ package a;
 import java.util.concurrent.locks.LockSupport;
 
 /**
- * Created by zhangweiwei on 16-11-1.
+ * Created by lee on 16-11-1.
  */
 public class Ta2 implements Runnable {
 

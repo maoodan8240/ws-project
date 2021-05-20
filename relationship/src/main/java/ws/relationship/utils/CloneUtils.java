@@ -12,7 +12,7 @@ import java.util.Map.Entry;
 import java.util.Objects;
 
 /**
- * Created by zhangweiwei on 17-4-5.
+ * Created by lee on 17-4-5.
  */
 public class CloneUtils {
 

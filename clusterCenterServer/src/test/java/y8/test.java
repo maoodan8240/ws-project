@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 import ws.clusterCenterServer.system.config.AppConfig;
 
 /**
- * Created by zhangweiwei on 16-8-11.
+ * Created by lee on 16-8-11.
  */
 public class test {
     private static final Logger LOGGER = LoggerFactory.getLogger(test.class);

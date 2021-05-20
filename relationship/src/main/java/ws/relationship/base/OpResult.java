@@ -1,7 +1,7 @@
 package ws.relationship.base;
 
 /**
- * Created by zhangweiwei on 17-6-7.
+ * Created by lee on 17-6-7.
  */
 public class OpResult {
     private long before; // 操作前

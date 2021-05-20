@@ -7,7 +7,7 @@ import ws.relationship.topLevelPojos.heros.Heros;
 import java.util.Map;
 
 /**
- * Created by zhangweiwei on 17-5-18.
+ * Created by lee on 17-5-18.
  */
 public class NewBattleHeroContainer {
     private Formation formation;

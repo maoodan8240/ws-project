@@ -5,7 +5,7 @@ import ws.protos.EnumsProtos.BattlePos;
 import ws.protos.EnumsProtos.HeroPositionEnum;
 
 /**
- * Created by zhangweiwei on 16-9-8.
+ * Created by lee on 16-9-8.
  */
 public class NewBattleUtils {
 

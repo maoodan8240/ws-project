@@ -20,7 +20,7 @@ import java.util.Locale;
 import java.util.Map;
 
 /**
- * Created by zhangweiwei on 17-6-7.
+ * Created by lee on 17-6-7.
  */
 public class ServerGlobalData {
     private static final Logger LOGGER = LoggerFactory.getLogger(ServerGlobalData.class);
